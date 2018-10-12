@@ -16,6 +16,17 @@ class ViewController: UIViewController {
     
     var btn:UIButton?
 
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var swit:UISwitch!
+    
+    //并不是所有的UI控件都可以设置Action
+    //只有继承自UIControl的才可以
+    @IBAction func click(_ sender: UISwitch) {
+        
+        print("开关状态变化了")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
