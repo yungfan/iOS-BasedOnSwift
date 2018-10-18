@@ -10,24 +10,22 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    
-    
     /**
-     *  plist对应的字典
+     *  plist对应的字典 必须借助于NSDictionary 因为Swift的Dictionary没有提供读文件的初始化函数
      */
     var cityNames:NSDictionary?
     /**
      *  省份
      */
-    var province:[String]?
+    var provinces:[String] = [String]()
     /**
      *  城市
      */
-    var city:[String]?
+    var cities:[String] = [String]()
     /**
      *  选中的省份
      */
-    var selectedProvince:String?
+    var selectedProvince:String = ""
     
     //UIPickerViewDataSource
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -39,14 +37,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         if component == 0 {
             
-            return self.province!.count
+            return self.provinces.count
         }
             
         else {
             
-            self.city = self.cityNames?[self.selectedProvince!] as? [String]
+            //通过所选省份 获取对应的城市
+            self.cities = (self.cityNames?[selectedProvince] as? [String])!
             
-            return self.city!.count
+            return self.cities.count
         }
     }
     
@@ -57,14 +56,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         if component == 0 {
             
-            return self.province![row]
+            return self.provinces[row]
         }
             
         else{
             
-            self.city = (self.cityNames?.value(forKey: self.selectedProvince!) as! [String])
+            //通过所选省份 获取对应的城市
+            self.cities = (self.cityNames?[selectedProvince] as? [String])!
             
-            return self.city![row]
+            return self.cities[row]
         }
         
     }
@@ -73,13 +73,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         
-        
+        //选择第一列的时候
         if component == 0 {
             
-            self.selectedProvince = self.province?[row]
+            //获取用户选择的省份
+            self.selectedProvince = self.provinces[row]
             
+            //重新加载第二列数据
             pickerView.reloadComponent(1)
             
+            //让第二列数据滚动到第一行
             pickerView.selectRow(0, inComponent: 1, animated: true)
             
             
@@ -91,15 +94,18 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        //读取plist文件
         if let path = Bundle.main.path(forResource: "cityData", ofType: "plist"){
             
-             self.cityNames = NSDictionary(contentsOfFile: path)
+            //将plist文件转成字典
+            self.cityNames = NSDictionary(contentsOfFile: path)
             
-            self.province = (cityNames?.allKeys as! [String])
+            //获取所有的省份
+            self.provinces = (cityNames?.allKeys as! [String])
             
-            self.selectedProvince = province?.first
+            //默认选择第一个省份
+            self.selectedProvince = self.provinces.first!
             
         }
         
