@@ -12,17 +12,17 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="城市选择器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIPickerView案例_城市选择器" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMH-1v-T8q">
-                                <rect key="frame" x="0.0" y="136" width="414" height="328"/>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llc-dG-RTz">
+                                <rect key="frame" x="0.0" y="93" width="414" height="236"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1eT-yD-Ojy"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="59u-FK-XAF"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Um-vw-k4j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6nm-e6-135"/>
                                 </connections>
                             </pickerView>
                         </subviews>

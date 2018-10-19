@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  城市选择器
+//  UIPickerView案例-城市选择器
 //
-//  Created by 杨帆 on 2018/10/17.
+//  Created by 杨帆 on 2018/10/19.
 //  Copyright © 2018 ABC. All rights reserved.
 //
 

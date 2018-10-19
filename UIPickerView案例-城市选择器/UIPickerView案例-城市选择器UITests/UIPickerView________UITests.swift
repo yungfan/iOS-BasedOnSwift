@@ -1,8 +1,14 @@
-//___FILEHEADER___
+//
+//  UIPickerView________UITests.swift
+//  UIPickerView案例-城市选择器UITests
+//
+//  Created by 杨帆 on 2018/10/19.
+//  Copyright © 2018 ABC. All rights reserved.
+//
 
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
+class UIPickerView________UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
