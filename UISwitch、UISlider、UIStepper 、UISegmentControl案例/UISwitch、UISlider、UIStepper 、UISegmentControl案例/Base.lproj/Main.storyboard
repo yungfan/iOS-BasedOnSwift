@@ -27,7 +27,7 @@
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="txl-9Q-1k6">
-                                <rect key="frame" x="28" y="273" width="118" height="30"/>
+                                <rect key="frame" x="28" y="273" width="190" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.12778546530000001" blue="0.025020199770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,8 +58,8 @@
                                 <rect key="frame" x="189" y="70" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lower.png" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-er-X98">
-                                <rect key="frame" x="224" y="255" width="58" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="low.png" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-er-X98">
+                                <rect key="frame" x="224" y="255" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您购买了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sst-4Z-xBT">
@@ -91,7 +91,7 @@
     </scenes>
     <resources>
         <image name="light.png" width="256" height="256"/>
-        <image name="lower.png" width="95" height="126"/>
+        <image name="low.png" width="128" height="128"/>
         <image name="red.png" width="128" height="128"/>
     </resources>
 </document>

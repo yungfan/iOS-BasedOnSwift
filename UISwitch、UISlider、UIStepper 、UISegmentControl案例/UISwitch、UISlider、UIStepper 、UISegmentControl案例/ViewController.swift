@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             
             if slider.value < 0.3 {
                 
-                self.voice.image = UIImage(named: "lower.png")
+                self.voice.image = UIImage(named: "low.png")
             }
                 
             else if(slider.value < 0.7) {
