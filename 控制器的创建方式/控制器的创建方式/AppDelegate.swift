@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //self.window?.rootViewController = XIBViewController()
         
-        var codeVC: UIViewController = CodeViewController()
+        let codeVC: UIViewController = CodeViewController()
         
         codeVC.view.backgroundColor = UIColor.blue
         
