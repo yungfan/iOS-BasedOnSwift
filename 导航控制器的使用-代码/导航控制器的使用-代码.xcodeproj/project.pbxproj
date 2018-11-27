@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C62EE4E21AD5E95000D2111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE4D21AD5E95000D2111 /* AppDelegate.swift */; };
+		3C62EE5521AD5E96000D2111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE5421AD5E96000D2111 /* Assets.xcassets */; };
+		3C62EE5821AD5E96000D2111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE5621AD5E96000D2111 /* LaunchScreen.storyboard */; };
+		3C62EE6321AD5E96000D2111 /* ___________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE6221AD5E96000D2111 /* ___________Tests.swift */; };
+		3C62EE6E21AD5E96000D2111 /* ___________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE6D21AD5E96000D2111 /* ___________UITests.swift */; };
+		3C62EE7D21AD5ECE000D2111 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE7B21AD5ECE000D2111 /* MainViewController.swift */; };
+		3C62EE7E21AD5ECE000D2111 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE7C21AD5ECE000D2111 /* MainViewController.xib */; };
+		3C62EE8021AD5F57000D2111 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE7F21AD5F57000D2111 /* CustomNavigationViewController.swift */; };
+		3C62EE8321AD6160000D2111 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE8121AD6160000D2111 /* ListViewController.swift */; };
+		3C62EE8421AD6160000D2111 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE8221AD6160000D2111 /* ListViewController.xib */; };
+		3C62EE8721AD61FC000D2111 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE8521AD61FC000D2111 /* ItemViewController.swift */; };
+		3C62EE8821AD61FC000D2111 /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE8621AD61FC000D2111 /* ItemViewController.xib */; };
+		3C62EE8B21AD6248000D2111 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62EE8921AD6248000D2111 /* DetailViewController.swift */; };
+		3C62EE8C21AD6248000D2111 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C62EE8A21AD6248000D2111 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C62EE5F21AD5E96000D2111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C62EE4221AD5E95000D2111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C62EE4921AD5E95000D2111;
+			remoteInfo = "导航控制器的使用-代码";
+		};
+		3C62EE6A21AD5E96000D2111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C62EE4221AD5E95000D2111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C62EE4921AD5E95000D2111;
+			remoteInfo = "导航控制器的使用-代码";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C62EE4A21AD5E95000D2111 /* 导航控制器的使用-代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "导航控制器的使用-代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C62EE4D21AD5E95000D2111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C62EE5421AD5E96000D2111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C62EE5721AD5E96000D2111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C62EE5921AD5E96000D2111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C62EE5E21AD5E96000D2111 /* 导航控制器的使用-代码Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "导航控制器的使用-代码Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C62EE6221AD5E96000D2111 /* ___________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___________Tests.swift"; sourceTree = "<group>"; };
+		3C62EE6421AD5E96000D2111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C62EE6921AD5E96000D2111 /* 导航控制器的使用-代码UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "导航控制器的使用-代码UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C62EE6D21AD5E96000D2111 /* ___________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___________UITests.swift"; sourceTree = "<group>"; };
+		3C62EE6F21AD5E96000D2111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C62EE7B21AD5ECE000D2111 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C62EE7C21AD5ECE000D2111 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3C62EE7F21AD5F57000D2111 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		3C62EE8121AD6160000D2111 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3C62EE8221AD6160000D2111 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		3C62EE8521AD61FC000D2111 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		3C62EE8621AD61FC000D2111 /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
+		3C62EE8921AD6248000D2111 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3C62EE8A21AD6248000D2111 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C62EE4721AD5E95000D2111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE5B21AD5E96000D2111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE6621AD5E96000D2111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C62EE4121AD5E95000D2111 = {
+			isa = PBXGroup;
+			children = (
+				3C62EE4C21AD5E95000D2111 /* 导航控制器的使用-代码 */,
+				3C62EE6121AD5E96000D2111 /* 导航控制器的使用-代码Tests */,
+				3C62EE6C21AD5E96000D2111 /* 导航控制器的使用-代码UITests */,
+				3C62EE4B21AD5E95000D2111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C62EE4B21AD5E95000D2111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C62EE4A21AD5E95000D2111 /* 导航控制器的使用-代码.app */,
+				3C62EE5E21AD5E96000D2111 /* 导航控制器的使用-代码Tests.xctest */,
+				3C62EE6921AD5E96000D2111 /* 导航控制器的使用-代码UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C62EE4C21AD5E95000D2111 /* 导航控制器的使用-代码 */ = {
+			isa = PBXGroup;
+			children = (
+				3C62EE4D21AD5E95000D2111 /* AppDelegate.swift */,
+				3C62EE5421AD5E96000D2111 /* Assets.xcassets */,
+				3C62EE5621AD5E96000D2111 /* LaunchScreen.storyboard */,
+				3C62EE5921AD5E96000D2111 /* Info.plist */,
+				3C62EE7B21AD5ECE000D2111 /* MainViewController.swift */,
+				3C62EE7C21AD5ECE000D2111 /* MainViewController.xib */,
+				3C62EE7F21AD5F57000D2111 /* CustomNavigationViewController.swift */,
+				3C62EE8121AD6160000D2111 /* ListViewController.swift */,
+				3C62EE8221AD6160000D2111 /* ListViewController.xib */,
+				3C62EE8521AD61FC000D2111 /* ItemViewController.swift */,
+				3C62EE8621AD61FC000D2111 /* ItemViewController.xib */,
+				3C62EE8921AD6248000D2111 /* DetailViewController.swift */,
+				3C62EE8A21AD6248000D2111 /* DetailViewController.xib */,
+			);
+			path = "导航控制器的使用-代码";
+			sourceTree = "<group>";
+		};
+		3C62EE6121AD5E96000D2111 /* 导航控制器的使用-代码Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C62EE6221AD5E96000D2111 /* ___________Tests.swift */,
+				3C62EE6421AD5E96000D2111 /* Info.plist */,
+			);
+			path = "导航控制器的使用-代码Tests";
+			sourceTree = "<group>";
+		};
+		3C62EE6C21AD5E96000D2111 /* 导航控制器的使用-代码UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C62EE6D21AD5E96000D2111 /* ___________UITests.swift */,
+				3C62EE6F21AD5E96000D2111 /* Info.plist */,
+			);
+			path = "导航控制器的使用-代码UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C62EE4921AD5E95000D2111 /* 导航控制器的使用-代码 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C62EE7221AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码" */;
+			buildPhases = (
+				3C62EE4621AD5E95000D2111 /* Sources */,
+				3C62EE4721AD5E95000D2111 /* Frameworks */,
+				3C62EE4821AD5E95000D2111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "导航控制器的使用-代码";
+			productName = "导航控制器的使用-代码";
+			productReference = 3C62EE4A21AD5E95000D2111 /* 导航控制器的使用-代码.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C62EE5D21AD5E96000D2111 /* 导航控制器的使用-代码Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C62EE7521AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码Tests" */;
+			buildPhases = (
+				3C62EE5A21AD5E96000D2111 /* Sources */,
+				3C62EE5B21AD5E96000D2111 /* Frameworks */,
+				3C62EE5C21AD5E96000D2111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C62EE6021AD5E96000D2111 /* PBXTargetDependency */,
+			);
+			name = "导航控制器的使用-代码Tests";
+			productName = "导航控制器的使用-代码Tests";
+			productReference = 3C62EE5E21AD5E96000D2111 /* 导航控制器的使用-代码Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C62EE6821AD5E96000D2111 /* 导航控制器的使用-代码UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C62EE7821AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码UITests" */;
+			buildPhases = (
+				3C62EE6521AD5E96000D2111 /* Sources */,
+				3C62EE6621AD5E96000D2111 /* Frameworks */,
+				3C62EE6721AD5E96000D2111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C62EE6B21AD5E96000D2111 /* PBXTargetDependency */,
+			);
+			name = "导航控制器的使用-代码UITests";
+			productName = "导航控制器的使用-代码UITests";
+			productReference = 3C62EE6921AD5E96000D2111 /* 导航控制器的使用-代码UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C62EE4221AD5E95000D2111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ABC;
+				TargetAttributes = {
+					3C62EE4921AD5E95000D2111 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3C62EE5D21AD5E96000D2111 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C62EE4921AD5E95000D2111;
+					};
+					3C62EE6821AD5E96000D2111 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C62EE4921AD5E95000D2111;
+					};
+				};
+			};
+			buildConfigurationList = 3C62EE4521AD5E95000D2111 /* Build configuration list for PBXProject "导航控制器的使用-代码" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C62EE4121AD5E95000D2111;
+			productRefGroup = 3C62EE4B21AD5E95000D2111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C62EE4921AD5E95000D2111 /* 导航控制器的使用-代码 */,
+				3C62EE5D21AD5E96000D2111 /* 导航控制器的使用-代码Tests */,
+				3C62EE6821AD5E96000D2111 /* 导航控制器的使用-代码UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C62EE4821AD5E95000D2111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62EE5821AD5E96000D2111 /* LaunchScreen.storyboard in Resources */,
+				3C62EE8C21AD6248000D2111 /* DetailViewController.xib in Resources */,
+				3C62EE7E21AD5ECE000D2111 /* MainViewController.xib in Resources */,
+				3C62EE8821AD61FC000D2111 /* ItemViewController.xib in Resources */,
+				3C62EE8421AD6160000D2111 /* ListViewController.xib in Resources */,
+				3C62EE5521AD5E96000D2111 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE5C21AD5E96000D2111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE6721AD5E96000D2111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C62EE4621AD5E95000D2111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62EE4E21AD5E95000D2111 /* AppDelegate.swift in Sources */,
+				3C62EE8021AD5F57000D2111 /* CustomNavigationViewController.swift in Sources */,
+				3C62EE8721AD61FC000D2111 /* ItemViewController.swift in Sources */,
+				3C62EE8B21AD6248000D2111 /* DetailViewController.swift in Sources */,
+				3C62EE8321AD6160000D2111 /* ListViewController.swift in Sources */,
+				3C62EE7D21AD5ECE000D2111 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE5A21AD5E96000D2111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62EE6321AD5E96000D2111 /* ___________Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C62EE6521AD5E96000D2111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62EE6E21AD5E96000D2111 /* ___________UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C62EE6021AD5E96000D2111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C62EE4921AD5E95000D2111 /* 导航控制器的使用-代码 */;
+			targetProxy = 3C62EE5F21AD5E96000D2111 /* PBXContainerItemProxy */;
+		};
+		3C62EE6B21AD5E96000D2111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C62EE4921AD5E95000D2111 /* 导航控制器的使用-代码 */;
+			targetProxy = 3C62EE6A21AD5E96000D2111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C62EE5621AD5E96000D2111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C62EE5721AD5E96000D2111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C62EE7021AD5E96000D2111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C62EE7121AD5E96000D2111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C62EE7321AD5E96000D2111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C62EE7421AD5E96000D2111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C62EE7621AD5E96000D2111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/导航控制器的使用-代码.app/导航控制器的使用-代码";
+			};
+			name = Debug;
+		};
+		3C62EE7721AD5E96000D2111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/导航控制器的使用-代码.app/导航控制器的使用-代码";
+			};
+			name = Release;
+		};
+		3C62EE7921AD5E96000D2111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "导航控制器的使用-代码";
+			};
+			name = Debug;
+		};
+		3C62EE7A21AD5E96000D2111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "导航控制器的使用-代码UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "导航控制器的使用-代码";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C62EE4521AD5E95000D2111 /* Build configuration list for PBXProject "导航控制器的使用-代码" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C62EE7021AD5E96000D2111 /* Debug */,
+				3C62EE7121AD5E96000D2111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C62EE7221AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C62EE7321AD5E96000D2111 /* Debug */,
+				3C62EE7421AD5E96000D2111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C62EE7521AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C62EE7621AD5E96000D2111 /* Debug */,
+				3C62EE7721AD5E96000D2111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C62EE7821AD5E96000D2111 /* Build configuration list for PBXNativeTarget "导航控制器的使用-代码UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C62EE7921AD5E96000D2111 /* Debug */,
+				3C62EE7A21AD5E96000D2111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C62EE4221AD5E95000D2111 /* Project object */;
+}
