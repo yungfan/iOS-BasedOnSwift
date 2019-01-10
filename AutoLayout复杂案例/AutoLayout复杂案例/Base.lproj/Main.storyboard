@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout复杂案例" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnI-4B-Tg6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k46-3H-eYI" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-Po-5rm">
+                                                <rect key="frame" x="50" y="50" width="240" height="120"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="wcS-z8-CRc"/>
+                                                    <constraint firstAttribute="width" constant="240" id="x55-Bp-YYW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-vl-qh7">
+                                                <rect key="frame" x="20" y="830" width="335" height="150"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Eb5-Yz-sDD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tRz-Po-5rm" firstAttribute="leading" secondItem="k46-3H-eYI" secondAttribute="leading" constant="50" id="5DU-Fq-IX5"/>
+                                            <constraint firstAttribute="trailing" secondItem="nSx-vl-qh7" secondAttribute="trailing" constant="20" id="E8t-SS-YDz"/>
+                                            <constraint firstAttribute="height" constant="1000" id="JEt-Hq-BSI"/>
+                                            <constraint firstAttribute="bottom" secondItem="nSx-vl-qh7" secondAttribute="bottom" constant="20" id="Q2M-0m-mr1"/>
+                                            <constraint firstItem="nSx-vl-qh7" firstAttribute="leading" secondItem="k46-3H-eYI" secondAttribute="leading" constant="20" id="iQP-cz-kMG"/>
+                                            <constraint firstItem="tRz-Po-5rm" firstAttribute="top" secondItem="k46-3H-eYI" secondAttribute="top" constant="50" id="kdJ-l8-X2k"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="k46-3H-eYI" firstAttribute="leading" secondItem="jnI-4B-Tg6" secondAttribute="leading" id="IoS-H7-Ag4"/>
+                                    <constraint firstAttribute="trailing" secondItem="k46-3H-eYI" secondAttribute="trailing" id="V3P-HP-BOb"/>
+                                    <constraint firstItem="k46-3H-eYI" firstAttribute="top" secondItem="jnI-4B-Tg6" secondAttribute="top" id="aOl-3k-fZu"/>
+                                    <constraint firstItem="k46-3H-eYI" firstAttribute="width" secondItem="jnI-4B-Tg6" secondAttribute="width" id="uQe-OR-fn3"/>
+                                    <constraint firstAttribute="bottom" secondItem="k46-3H-eYI" secondAttribute="bottom" id="yHf-CI-Fag"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jnI-4B-Tg6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DgN-zu-b2m"/>
+                            <constraint firstItem="jnI-4B-Tg6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fLa-Fr-5kY"/>
+                            <constraint firstItem="jnI-4B-Tg6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hgO-q9-5lD"/>
+                            <constraint firstItem="jnI-4B-Tg6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="r3m-6E-N7G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.400000000000006" y="-40.479760119940032"/>
+        </scene>
+    </scenes>
+</document>
