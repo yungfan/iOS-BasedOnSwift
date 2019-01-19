@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C8B516421F2CE180031BADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B516321F2CE180031BADD /* AppDelegate.swift */; };
+		3C8B516621F2CE180031BADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B516521F2CE180031BADD /* ViewController.swift */; };
+		3C8B516921F2CE180031BADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B516721F2CE180031BADD /* Main.storyboard */; };
+		3C8B516B21F2CE190031BADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B516A21F2CE190031BADD /* Assets.xcassets */; };
+		3C8B516E21F2CE190031BADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B516C21F2CE190031BADD /* LaunchScreen.storyboard */; };
+		3C8B517921F2CE190031BADD /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B517821F2CE190031BADD /* __Tests.swift */; };
+		3C8B518421F2CE1A0031BADD /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B518321F2CE1A0031BADD /* __UITests.swift */; };
+		3C8B519221F2D3E60031BADD /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B519121F2D3E60031BADD /* RedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C8B517521F2CE190031BADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C8B515821F2CE180031BADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C8B515F21F2CE180031BADD;
+			remoteInfo = "触摸";
+		};
+		3C8B518021F2CE1A0031BADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C8B515821F2CE180031BADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C8B515F21F2CE180031BADD;
+			remoteInfo = "触摸";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C8B516021F2CE180031BADD /* 触摸.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "触摸.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8B516321F2CE180031BADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C8B516521F2CE180031BADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C8B516821F2CE180031BADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C8B516A21F2CE190031BADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C8B516D21F2CE190031BADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C8B516F21F2CE190031BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8B517421F2CE190031BADD /* 触摸Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "触摸Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8B517821F2CE190031BADD /* __Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Tests.swift; sourceTree = "<group>"; };
+		3C8B517A21F2CE190031BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8B517F21F2CE1A0031BADD /* 触摸UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "触摸UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8B518321F2CE1A0031BADD /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
+		3C8B518521F2CE1A0031BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8B519121F2D3E60031BADD /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C8B515D21F2CE180031BADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517121F2CE190031BADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517C21F2CE1A0031BADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C8B515721F2CE180031BADD = {
+			isa = PBXGroup;
+			children = (
+				3C8B516221F2CE180031BADD /* 触摸 */,
+				3C8B517721F2CE190031BADD /* 触摸Tests */,
+				3C8B518221F2CE1A0031BADD /* 触摸UITests */,
+				3C8B516121F2CE180031BADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C8B516121F2CE180031BADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B516021F2CE180031BADD /* 触摸.app */,
+				3C8B517421F2CE190031BADD /* 触摸Tests.xctest */,
+				3C8B517F21F2CE1A0031BADD /* 触摸UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C8B516221F2CE180031BADD /* 触摸 */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B516321F2CE180031BADD /* AppDelegate.swift */,
+				3C8B516521F2CE180031BADD /* ViewController.swift */,
+				3C8B516721F2CE180031BADD /* Main.storyboard */,
+				3C8B516A21F2CE190031BADD /* Assets.xcassets */,
+				3C8B516C21F2CE190031BADD /* LaunchScreen.storyboard */,
+				3C8B516F21F2CE190031BADD /* Info.plist */,
+				3C8B519121F2D3E60031BADD /* RedView.swift */,
+			);
+			path = "触摸";
+			sourceTree = "<group>";
+		};
+		3C8B517721F2CE190031BADD /* 触摸Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B517821F2CE190031BADD /* __Tests.swift */,
+				3C8B517A21F2CE190031BADD /* Info.plist */,
+			);
+			path = "触摸Tests";
+			sourceTree = "<group>";
+		};
+		3C8B518221F2CE1A0031BADD /* 触摸UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B518321F2CE1A0031BADD /* __UITests.swift */,
+				3C8B518521F2CE1A0031BADD /* Info.plist */,
+			);
+			path = "触摸UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C8B515F21F2CE180031BADD /* 触摸 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8B518821F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸" */;
+			buildPhases = (
+				3C8B515C21F2CE180031BADD /* Sources */,
+				3C8B515D21F2CE180031BADD /* Frameworks */,
+				3C8B515E21F2CE180031BADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "触摸";
+			productName = "触摸";
+			productReference = 3C8B516021F2CE180031BADD /* 触摸.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C8B517321F2CE190031BADD /* 触摸Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8B518B21F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸Tests" */;
+			buildPhases = (
+				3C8B517021F2CE190031BADD /* Sources */,
+				3C8B517121F2CE190031BADD /* Frameworks */,
+				3C8B517221F2CE190031BADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8B517621F2CE190031BADD /* PBXTargetDependency */,
+			);
+			name = "触摸Tests";
+			productName = "触摸Tests";
+			productReference = 3C8B517421F2CE190031BADD /* 触摸Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C8B517E21F2CE1A0031BADD /* 触摸UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C8B518E21F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸UITests" */;
+			buildPhases = (
+				3C8B517B21F2CE1A0031BADD /* Sources */,
+				3C8B517C21F2CE1A0031BADD /* Frameworks */,
+				3C8B517D21F2CE1A0031BADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8B518121F2CE1A0031BADD /* PBXTargetDependency */,
+			);
+			name = "触摸UITests";
+			productName = "触摸UITests";
+			productReference = 3C8B517F21F2CE1A0031BADD /* 触摸UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C8B515821F2CE180031BADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ABC;
+				TargetAttributes = {
+					3C8B515F21F2CE180031BADD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3C8B517321F2CE190031BADD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C8B515F21F2CE180031BADD;
+					};
+					3C8B517E21F2CE1A0031BADD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C8B515F21F2CE180031BADD;
+					};
+				};
+			};
+			buildConfigurationList = 3C8B515B21F2CE180031BADD /* Build configuration list for PBXProject "触摸" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C8B515721F2CE180031BADD;
+			productRefGroup = 3C8B516121F2CE180031BADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C8B515F21F2CE180031BADD /* 触摸 */,
+				3C8B517321F2CE190031BADD /* 触摸Tests */,
+				3C8B517E21F2CE1A0031BADD /* 触摸UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C8B515E21F2CE180031BADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8B516E21F2CE190031BADD /* LaunchScreen.storyboard in Resources */,
+				3C8B516B21F2CE190031BADD /* Assets.xcassets in Resources */,
+				3C8B516921F2CE180031BADD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517221F2CE190031BADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517D21F2CE1A0031BADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C8B515C21F2CE180031BADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8B516621F2CE180031BADD /* ViewController.swift in Sources */,
+				3C8B516421F2CE180031BADD /* AppDelegate.swift in Sources */,
+				3C8B519221F2D3E60031BADD /* RedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517021F2CE190031BADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8B517921F2CE190031BADD /* __Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8B517B21F2CE1A0031BADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8B518421F2CE1A0031BADD /* __UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C8B517621F2CE190031BADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C8B515F21F2CE180031BADD /* 触摸 */;
+			targetProxy = 3C8B517521F2CE190031BADD /* PBXContainerItemProxy */;
+		};
+		3C8B518121F2CE1A0031BADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C8B515F21F2CE180031BADD /* 触摸 */;
+			targetProxy = 3C8B518021F2CE1A0031BADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C8B516721F2CE180031BADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C8B516821F2CE180031BADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C8B516C21F2CE190031BADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C8B516D21F2CE190031BADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C8B518621F2CE1A0031BADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C8B518721F2CE1A0031BADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C8B518921F2CE1A0031BADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C8B518A21F2CE1A0031BADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C8B518C21F2CE1A0031BADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/触摸.app/触摸";
+			};
+			name = Debug;
+		};
+		3C8B518D21F2CE1A0031BADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/触摸.app/触摸";
+			};
+			name = Release;
+		};
+		3C8B518F21F2CE1A0031BADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "触摸";
+			};
+			name = Debug;
+		};
+		3C8B519021F2CE1A0031BADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "触摸UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "触摸";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C8B515B21F2CE180031BADD /* Build configuration list for PBXProject "触摸" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8B518621F2CE1A0031BADD /* Debug */,
+				3C8B518721F2CE1A0031BADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8B518821F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8B518921F2CE1A0031BADD /* Debug */,
+				3C8B518A21F2CE1A0031BADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8B518B21F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8B518C21F2CE1A0031BADD /* Debug */,
+				3C8B518D21F2CE1A0031BADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C8B518E21F2CE1A0031BADD /* Build configuration list for PBXNativeTarget "触摸UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8B518F21F2CE1A0031BADD /* Debug */,
+				3C8B519021F2CE1A0031BADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C8B515821F2CE180031BADD /* Project object */;
+}
