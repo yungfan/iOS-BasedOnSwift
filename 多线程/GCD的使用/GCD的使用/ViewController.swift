@@ -29,15 +29,23 @@ class ViewController: UIViewController {
         //带qos
         let dipatchQueue = DispatchQueue.global(qos: .default)
         
-        //1.创建一个, 当除label外的参数都使用默认值时，初始化方法返回的便是串行队列。如果需要返回并发队列，参数attributes传值为.concurrent即可
-        //2.参数qos代表队列执行的优先级，有六种优先级可供选择，优先级从高到低依次为userInteractive>userInitiated>utility>background, 而default与unspecified介于userInteractive与background之间，具体有系统决定。
+        //1.创建一个队列, 当除label外的参数都使用默认值时，初始化方法返回的便是串行队列。如果需要返回并发队列，参数attributes传值为.concurrent即可。label：队列的名称
+        //2.参数qos（Quality of Service(服务质量)）代表队列执行的优先级，有六种优先级可供选择，优先级从高到低依次为userInteractive>userInitiated>utility>background, 而default与unspecified介于userInteractive与background之间，具体由系统决定。
+        //DISPATCH_QUEUE_PRIORITY_HIGH:        .userInitiated
+        //DISPATCH_QUEUE_PRIORITY_DEFAULT:      .default
+        //DISPATCH_QUEUE_PRIORITY_LOW:          .utility
+        //DISPATCH_QUEUE_PRIORITY_BACKGROUND:  .background
         //3.DispatchQueue.Attributes 是一个结构体类型，该结构体提供了两个静态变量：concurrent和initiallyInactive(注意，没有代表串行队列的静态变量)。如果attributes参数传值为initiallyInactive,  任务不会自动执行，而是需要开发者手动调用activate()触发。但是代码依然是串行进行的,如果想要手动触发、并行执行任务,可以指定attributes参数接受一个数组: [.concurrent, .initiallyInactive]
-        //4. DispatchQueue.AutoreleaseFrequency有三种属性值.inherit、.workItem和.never。
-        //.inherit：不确定，之前默认的行为也是现在的默认值
-        //.workItem：为每个执行的任务创建自动释放池,项目完成时清理临时对象
-        //.never：GCD不为您管理自动释放池
+        //4. DispatchQueue.AutoreleaseFrequency有三种属性值.inherit、.workItem和.never，用来设置负责管理任务内对象生命周期的 autorelease pool 的自动释放频率。
+        //.inherit：继承目标队列的该属性
+        //.workItem：跟随每个任务的执行周期进行自动创建和释放
+        //.never：不会自动创建 autorelease pool，需要手动管理
+        //一般采用前两项。如果任务内需要大量重复的创建对象，可以使用 never 类型，来手动创建 aotorelease pool
         
-        //5.参数target 用于指定即将创建的队列与队列target优先级相同。也可通过setTarget(queue: DispatchQueue?)函数指定与queue相同的优先级
+        //5.参数target 该参数设置了队列的目标队列，即队列中的任务运行时实际所在的队列。目标队列最终约束了队列的优先级等属性。在程序中手动创建的队列最后都指向了系统自带的主队列或全局并发队列。
+        //从 Swift 3 开始，对目标队列的设置进行了约束，只有两种情况可以显示的设置目标队列：
+        //（1）在初始化方法中设置目标队列；
+        //（2）在初始化方法中，attributes 设定为 initiallyInactive，在队列调用 activate() 之前，可以指定目标队列。
         
         //三、创建一个名为queue001的并行队列
         let queue = DispatchQueue(label: "queue001", qos: .default, attributes: .concurrent, autoreleaseFrequency: .inherit, target: nil)
