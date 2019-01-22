@@ -81,7 +81,46 @@ class ViewController: UIViewController {
         print("使用之后")
     }
     
+    // MARK:- 并发队列与串行队列
     
+    //不管是并发队列还是串行队列，如果是同步执行，不会开辟新线程，只有异步执行才会开辟新线程-通过打印可以得出
+    //并发队列在执行多个任务的时候，会开辟多个线程之执行，而串行队列不会，他会执行完一个再去执行另外一个
+    func important(){
+        
+        let queueSerial = DispatchQueue(label: "串行")
+        
+        let queueConcurrent = DispatchQueue(label: "并发", qos: .userInteractive, attributes: .concurrent, autoreleaseFrequency: .workItem, target: nil)
+        
+        queueConcurrent.async {
+            
+            print(Thread.current)
+            
+            for i in 0...10{
+                
+                Thread.sleep(forTimeInterval: 1)
+                
+                print("1执行任务\(i)")
+            }
+            
+            
+        }
+        
+        
+        queueConcurrent.async {
+            
+            print(Thread.current)
+            
+            for i in 0...10{
+                
+                Thread.sleep(forTimeInterval: 1)
+                
+                print("2执行任务\(i)")
+            }
+            
+            
+        }
+        
+    }
     
     // MARK:- 延迟执行
     func dispatchAfter(){
