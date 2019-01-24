@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var infoLb: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.async {
                 
-                 print("\(Thread.current)更新UI")
+                self.infoLb.text = "GCD方式更新UI"
             }
             
         }
@@ -63,7 +65,7 @@ class ViewController: UIViewController {
             
             OperationQueue.main.addOperation {
                 
-                print("\(Thread.current)更新UI")
+                self.infoLb.text = "Operation方式更新UI"
             }
         }
     }
@@ -71,14 +73,14 @@ class ViewController: UIViewController {
     
     @objc fileprivate func updateUI(){
         
-        print("\(Thread.current)更新UI")
+        self.infoLb.text = "Thread方式更新UI"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         //threadMode()
-        //gcdMode()
-        operationMode()
+        gcdMode()
+        //operationMode()
     }
 }
 
