@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout压缩与拉伸" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpG-my-EqX">
+                                <rect key="frame" x="0.0" y="50" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="我是左边的Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-K4-DBv">
+                                        <rect key="frame" x="0.0" y="30" width="115.5" height="20"/>
+                                        <color key="backgroundColor" red="1" green="0.011654623173615097" blue="0.13348367322238519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="我是右边的Label。压缩权值我大" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn6-6G-h8S">
+                                        <rect key="frame" x="125.5" y="30" width="249.5" height="20"/>
+                                        <color key="backgroundColor" red="0.83310485993371863" green="0.20355320699277424" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22616556389644205" green="1" blue="0.25133377013253422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="03v-3Z-hXs"/>
+                                    <constraint firstItem="tn6-6G-h8S" firstAttribute="top" secondItem="UpG-my-EqX" secondAttribute="top" constant="30" id="0bb-0e-pFU"/>
+                                    <constraint firstAttribute="trailing" secondItem="tn6-6G-h8S" secondAttribute="trailing" id="56o-ii-Amv"/>
+                                    <constraint firstAttribute="bottom" secondItem="CtX-K4-DBv" secondAttribute="bottom" constant="30" id="6gl-5W-NuQ"/>
+                                    <constraint firstItem="CtX-K4-DBv" firstAttribute="leading" secondItem="UpG-my-EqX" secondAttribute="leading" id="CHI-09-iGB"/>
+                                    <constraint firstItem="tn6-6G-h8S" firstAttribute="leading" secondItem="CtX-K4-DBv" secondAttribute="trailing" constant="10" id="Uh9-Xw-0Mr"/>
+                                    <constraint firstItem="CtX-K4-DBv" firstAttribute="top" secondItem="UpG-my-EqX" secondAttribute="top" constant="30" id="il7-bO-rLh"/>
+                                    <constraint firstAttribute="bottom" secondItem="tn6-6G-h8S" secondAttribute="bottom" constant="30" id="yqd-Vr-FWM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytt-Wd-pdN">
+                                <rect key="frame" x="0.0" y="138" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="jpT-Sp-0RT"/>
+                                </constraints>
+                                <string key="text">1. 当字数不够的时候，必须设置拉伸，不然会报错
+
+2. 当字数已经足够多的时候，拉伸可以不设置，必须设置压缩
+
+3. 所以两个最好同时设置</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.44150405999999998" blue="0.2032404626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytt-Wd-pdN" secondAttribute="trailing" id="4XS-5G-V61"/>
+                            <constraint firstItem="ytt-Wd-pdN" firstAttribute="top" secondItem="UpG-my-EqX" secondAttribute="bottom" constant="8" id="FUe-D7-9Ps"/>
+                            <constraint firstItem="ytt-Wd-pdN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I16-fA-ksu"/>
+                            <constraint firstItem="UpG-my-EqX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="S92-q3-3TD"/>
+                            <constraint firstItem="UpG-my-EqX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dAf-Ma-boS"/>
+                            <constraint firstItem="UpG-my-EqX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lYE-0M-aJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
