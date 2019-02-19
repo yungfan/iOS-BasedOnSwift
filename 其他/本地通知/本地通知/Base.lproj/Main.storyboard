@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="本地通知" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-jS-YpM">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="日期"/>
+                                <connections>
+                                    <action selector="dateInterval:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5J-LK-Q8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-IV-jCR">
+                                <rect key="frame" x="156.5" y="268.5" width="62" height="30"/>
+                                <state key="normal" title="一段时间"/>
+                                <connections>
+                                    <action selector="timeInterval:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zwe-Ss-hQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFG-Qh-gzB">
+                                <rect key="frame" x="172" y="368.5" width="31" height="30"/>
+                                <state key="normal" title="位置"/>
+                                <connections>
+                                    <action selector="locationInterval:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLu-PN-eXQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fad-jS-YpM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EaV-BE-2hK"/>
+                            <constraint firstItem="SFG-Qh-gzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3K-8a-9Xb"/>
+                            <constraint firstItem="SFG-Qh-gzB" firstAttribute="top" secondItem="Fad-jS-YpM" secondAttribute="bottom" constant="20" id="lc6-Xn-nsN"/>
+                            <constraint firstItem="Fad-jS-YpM" firstAttribute="top" secondItem="kYy-IV-jCR" secondAttribute="bottom" constant="20" id="mgO-nw-2Qj"/>
+                            <constraint firstItem="kYy-IV-jCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0W-gK-4tt"/>
+                            <constraint firstItem="Fad-jS-YpM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="veu-LV-YTU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
