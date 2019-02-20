@@ -69,7 +69,7 @@ class ViewController: UIViewController {
             
             if let placeMark = placeMark{
 
-                let flag = MapFlag(title: placeMark.locality!, subTitle: placeMark.subLocality!, coordinate: coordinate, url: "https://www.abc.edu.cn")
+                let flag = MapFlag(title: placeMark.locality!, subtitle: placeMark.subLocality!, coordinate: coordinate, url: "https://www.abc.edu.cn")
              
                 self.mapView.addAnnotation(flag)
             }
