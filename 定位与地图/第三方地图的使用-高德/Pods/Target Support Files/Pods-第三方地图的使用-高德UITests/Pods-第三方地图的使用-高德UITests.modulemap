@@ -1,0 +1,6 @@
+framework module Pods____________UITests {
+  umbrella header "Pods-第三方地图的使用-高德UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

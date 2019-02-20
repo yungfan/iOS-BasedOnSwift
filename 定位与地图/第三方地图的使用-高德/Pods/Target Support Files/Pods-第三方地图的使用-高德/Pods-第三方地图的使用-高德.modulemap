@@ -1,0 +1,6 @@
+framework module Pods____________ {
+  umbrella header "Pods-第三方地图的使用-高德-umbrella.h"
+
+  export *
+  module * { export * }
+}
