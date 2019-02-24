@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //配置Key，除了key要一致，还必须保证bundle idy与配置的一样
+        //配置Key，除了key要一致，还必须保证bundle id与配置的一样
         AMapServices.shared().apiKey = "a14d50ad493f05a05df0bce2035c6503"
         
         poi()
