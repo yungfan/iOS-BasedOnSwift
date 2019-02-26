@@ -135,7 +135,10 @@ extension ViewController : MKMapViewDelegate {
             
             
             //设置显示的图标
-            let num = arc4random_uniform(11)
+            //let num = arc4random_uniform(11)
+            
+            //Swift 4.2 之后新增的随机数函数
+            let num = Int.random(in: 0...10)
             
             annotationView.image = UIImage(named:"icon_map_cateid_\(num)")
             
