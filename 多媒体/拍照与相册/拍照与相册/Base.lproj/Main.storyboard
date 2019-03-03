@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="拍照与相册" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-HL-uh1">
+                                <rect key="frame" x="16" y="40" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="w5p-Oc-eTX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-h3-JTb">
+                                <rect key="frame" x="16" y="470" width="31" height="30"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="btnCameraClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eM-2R-Tmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjv-8k-9wf">
+                                <rect key="frame" x="328" y="470" width="31" height="30"/>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="btnPhotoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cok-vS-vPX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gjv-8k-9wf" secondAttribute="trailing" constant="16" id="12T-yy-emb"/>
+                            <constraint firstItem="MZC-HL-uh1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DNs-cg-cHs"/>
+                            <constraint firstItem="Gjv-8k-9wf" firstAttribute="top" secondItem="fWt-h3-JTb" secondAttribute="top" id="JCg-Ua-2hl"/>
+                            <constraint firstItem="fWt-h3-JTb" firstAttribute="top" secondItem="MZC-HL-uh1" secondAttribute="bottom" constant="130" id="KEU-Z7-Fwc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZC-HL-uh1" secondAttribute="trailing" constant="16" id="Kd0-w6-bMZ"/>
+                            <constraint firstItem="MZC-HL-uh1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MvJ-rL-rHY"/>
+                            <constraint firstItem="fWt-h3-JTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ruM-Wj-2a7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="showImage" destination="MZC-HL-uh1" id="Li6-4X-VPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
