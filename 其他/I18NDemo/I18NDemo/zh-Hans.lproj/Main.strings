@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bRH-7c-qiE"; */
+"bRH-7c-qiE.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "UserName"; ObjectID = "dp4-Bf-56s"; */
+"dp4-Bf-56s.text" = "用户名";
+
+/* Class = "UITextField"; placeholder = "Please input your name"; ObjectID = "fen-IE-aUn"; */
+"fen-IE-aUn.placeholder" = "请输入用户名";

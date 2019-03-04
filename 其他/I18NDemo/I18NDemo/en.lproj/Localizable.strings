@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  I18NDemo
+
+  Created by 杨帆 on 2019/3/4.
+  Copyright © 2019 杨帆. All rights reserved.
+*/
+"title" = "Info";
+"message" = "This is a Dialog";
+"btnTitle" = "Cancel";

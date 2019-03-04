@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  I18NDemo
+
+  Created by 杨帆 on 2019/3/4.
+  Copyright © 2019 杨帆. All rights reserved.
+*/
+"title" = "温馨提示";
+"message" = "这是一个对话框";
+"btnTitle" = "取消";
