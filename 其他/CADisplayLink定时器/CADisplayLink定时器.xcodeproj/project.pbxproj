@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4A00DC2231589700004566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A00DB2231589700004566 /* AppDelegate.swift */; };
+		3C4A00DE2231589700004566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A00DD2231589700004566 /* ViewController.swift */; };
+		3C4A00E12231589700004566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A00DF2231589700004566 /* Main.storyboard */; };
+		3C4A00E32231589800004566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A00E22231589800004566 /* Assets.xcassets */; };
+		3C4A00E62231589800004566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A00E42231589800004566 /* LaunchScreen.storyboard */; };
+		3C4A00F12231589800004566 /* CADisplayLink___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A00F02231589800004566 /* CADisplayLink___Tests.swift */; };
+		3C4A00FC2231589800004566 /* CADisplayLink___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A00FB2231589800004566 /* CADisplayLink___UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4A00ED2231589800004566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4A00D02231589700004566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4A00D72231589700004566;
+			remoteInfo = "CADisplayLink定时器";
+		};
+		3C4A00F82231589800004566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4A00D02231589700004566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4A00D72231589700004566;
+			remoteInfo = "CADisplayLink定时器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4A00D82231589700004566 /* CADisplayLink定时器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CADisplayLink定时器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A00DB2231589700004566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C4A00DD2231589700004566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C4A00E02231589700004566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C4A00E22231589800004566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C4A00E52231589800004566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C4A00E72231589800004566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4A00EC2231589800004566 /* CADisplayLink定时器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CADisplayLink定时器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A00F02231589800004566 /* CADisplayLink___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CADisplayLink___Tests.swift"; sourceTree = "<group>"; };
+		3C4A00F22231589800004566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4A00F72231589800004566 /* CADisplayLink定时器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CADisplayLink定时器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A00FB2231589800004566 /* CADisplayLink___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CADisplayLink___UITests.swift"; sourceTree = "<group>"; };
+		3C4A00FD2231589800004566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4A00D52231589700004566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00E92231589800004566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00F42231589800004566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4A00CF2231589700004566 = {
+			isa = PBXGroup;
+			children = (
+				3C4A00DA2231589700004566 /* CADisplayLink定时器 */,
+				3C4A00EF2231589800004566 /* CADisplayLink定时器Tests */,
+				3C4A00FA2231589800004566 /* CADisplayLink定时器UITests */,
+				3C4A00D92231589700004566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4A00D92231589700004566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A00D82231589700004566 /* CADisplayLink定时器.app */,
+				3C4A00EC2231589800004566 /* CADisplayLink定时器Tests.xctest */,
+				3C4A00F72231589800004566 /* CADisplayLink定时器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C4A00DA2231589700004566 /* CADisplayLink定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A00DB2231589700004566 /* AppDelegate.swift */,
+				3C4A00DD2231589700004566 /* ViewController.swift */,
+				3C4A00DF2231589700004566 /* Main.storyboard */,
+				3C4A00E22231589800004566 /* Assets.xcassets */,
+				3C4A00E42231589800004566 /* LaunchScreen.storyboard */,
+				3C4A00E72231589800004566 /* Info.plist */,
+			);
+			path = "CADisplayLink定时器";
+			sourceTree = "<group>";
+		};
+		3C4A00EF2231589800004566 /* CADisplayLink定时器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A00F02231589800004566 /* CADisplayLink___Tests.swift */,
+				3C4A00F22231589800004566 /* Info.plist */,
+			);
+			path = "CADisplayLink定时器Tests";
+			sourceTree = "<group>";
+		};
+		3C4A00FA2231589800004566 /* CADisplayLink定时器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A00FB2231589800004566 /* CADisplayLink___UITests.swift */,
+				3C4A00FD2231589800004566 /* Info.plist */,
+			);
+			path = "CADisplayLink定时器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4A00D72231589700004566 /* CADisplayLink定时器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4A01002231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器" */;
+			buildPhases = (
+				3C4A00D42231589700004566 /* Sources */,
+				3C4A00D52231589700004566 /* Frameworks */,
+				3C4A00D62231589700004566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CADisplayLink定时器";
+			productName = "CADisplayLink定时器";
+			productReference = 3C4A00D82231589700004566 /* CADisplayLink定时器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4A00EB2231589800004566 /* CADisplayLink定时器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4A01032231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器Tests" */;
+			buildPhases = (
+				3C4A00E82231589800004566 /* Sources */,
+				3C4A00E92231589800004566 /* Frameworks */,
+				3C4A00EA2231589800004566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4A00EE2231589800004566 /* PBXTargetDependency */,
+			);
+			name = "CADisplayLink定时器Tests";
+			productName = "CADisplayLink定时器Tests";
+			productReference = 3C4A00EC2231589800004566 /* CADisplayLink定时器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C4A00F62231589800004566 /* CADisplayLink定时器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4A01062231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器UITests" */;
+			buildPhases = (
+				3C4A00F32231589800004566 /* Sources */,
+				3C4A00F42231589800004566 /* Frameworks */,
+				3C4A00F52231589800004566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4A00F92231589800004566 /* PBXTargetDependency */,
+			);
+			name = "CADisplayLink定时器UITests";
+			productName = "CADisplayLink定时器UITests";
+			productReference = 3C4A00F72231589800004566 /* CADisplayLink定时器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C4A00D02231589700004566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "杨帆";
+				TargetAttributes = {
+					3C4A00D72231589700004566 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3C4A00EB2231589800004566 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C4A00D72231589700004566;
+					};
+					3C4A00F62231589800004566 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C4A00D72231589700004566;
+					};
+				};
+			};
+			buildConfigurationList = 3C4A00D32231589700004566 /* Build configuration list for PBXProject "CADisplayLink定时器" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C4A00CF2231589700004566;
+			productRefGroup = 3C4A00D92231589700004566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4A00D72231589700004566 /* CADisplayLink定时器 */,
+				3C4A00EB2231589800004566 /* CADisplayLink定时器Tests */,
+				3C4A00F62231589800004566 /* CADisplayLink定时器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4A00D62231589700004566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4A00E62231589800004566 /* LaunchScreen.storyboard in Resources */,
+				3C4A00E32231589800004566 /* Assets.xcassets in Resources */,
+				3C4A00E12231589700004566 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00EA2231589800004566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00F52231589800004566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4A00D42231589700004566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4A00DE2231589700004566 /* ViewController.swift in Sources */,
+				3C4A00DC2231589700004566 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00E82231589800004566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4A00F12231589800004566 /* CADisplayLink___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4A00F32231589800004566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4A00FC2231589800004566 /* CADisplayLink___UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4A00EE2231589800004566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4A00D72231589700004566 /* CADisplayLink定时器 */;
+			targetProxy = 3C4A00ED2231589800004566 /* PBXContainerItemProxy */;
+		};
+		3C4A00F92231589800004566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4A00D72231589700004566 /* CADisplayLink定时器 */;
+			targetProxy = 3C4A00F82231589800004566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C4A00DF2231589700004566 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4A00E02231589700004566 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C4A00E42231589800004566 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4A00E52231589800004566 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C4A00FE2231589800004566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C4A00FF2231589800004566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C4A01012231589800004566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C4A01022231589800004566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C4A01042231589800004566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CADisplayLink定时器.app/CADisplayLink定时器";
+			};
+			name = Debug;
+		};
+		3C4A01052231589800004566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CADisplayLink定时器.app/CADisplayLink定时器";
+			};
+			name = Release;
+		};
+		3C4A01072231589800004566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CADisplayLink定时器";
+			};
+			name = Debug;
+		};
+		3C4A01082231589800004566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CADisplayLink定时器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.CADisplayLink---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CADisplayLink定时器";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4A00D32231589700004566 /* Build configuration list for PBXProject "CADisplayLink定时器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4A00FE2231589800004566 /* Debug */,
+				3C4A00FF2231589800004566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4A01002231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4A01012231589800004566 /* Debug */,
+				3C4A01022231589800004566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4A01032231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4A01042231589800004566 /* Debug */,
+				3C4A01052231589800004566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4A01062231589800004566 /* Build configuration list for PBXNativeTarget "CADisplayLink定时器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4A01072231589800004566 /* Debug */,
+				3C4A01082231589800004566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C4A00D02231589700004566 /* Project object */;
+}
