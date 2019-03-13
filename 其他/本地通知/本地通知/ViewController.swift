@@ -11,18 +11,20 @@ import UserNotifications
 import CoreLocation
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     //一段时间后触发——触发器不一样而已
     @IBAction func timeInterval(_ sender: AnyObject){
         //设置推送内容
         let content = UNMutableNotificationContent()
         content.title = "你好"
         content.body = "这是一条基于时间间隔的测试通知"
+        content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "feiji.wav"))
+        content.badge = 1
         
         //设置通知触发器
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
         //将通知请求添加到发送中心
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
-
+    
     //指定日期时间触发
     @IBAction func dateInterval(_ sender: AnyObject){
         
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
         //components.weekday = 2 //周一
         //components.hour = 8 //上午8点
         //components.second = 30 //30分
-       
+        
         //设置通知触发器
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         
@@ -81,6 +83,7 @@ class ViewController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = "你好"
         content.body = "这是一条基于位置的测试通知"
+
         
         let coordinate = CLLocationCoordinate2D(latitude: 31.29, longitude: 118.36)
         let region = CLCircularRegion(center: coordinate, radius: 500, identifier: "center")

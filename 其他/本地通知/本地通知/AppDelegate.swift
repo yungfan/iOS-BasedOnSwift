@@ -27,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
         }
         
+        //设置通知代理
+        UNUserNotificationCenter.current().delegate = self
+        
         return true
     }
 
@@ -46,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -55,3 +60,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate: UNUserNotificationCenterDelegate{
+    
+    
+    //App处于前台接收通知时
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+         completionHandler([.alert, .sound])
+        
+    }
+    
+    
+    //App通知的点击事件
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        self.window?.rootViewController?.view.backgroundColor = UIColor.red
+    }
+}
