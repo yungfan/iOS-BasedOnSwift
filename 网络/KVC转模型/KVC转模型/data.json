@@ -1,0 +1,20 @@
+{
+    "reason":"success",
+    "result":{
+        "pubTime":"20160115172532",
+        "reqTime":"20160115173718",
+        "data":{
+            "url":"http://www.abc.edu.cn/xsgzc/",
+            "cw":"01",
+            "w":"多云",
+            "rh":55,
+            "cwd":"04",
+            "wd":"南风",
+            "wdg":2,
+            "tmp":3,
+            "airp":1015,
+            "st":3
+        }
+    },
+    "error_code":0
+}
