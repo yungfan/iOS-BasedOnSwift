@@ -11,7 +11,7 @@ import SQLite
 
 struct DBTools {
     
-      ///数据库路径
+    ///数据库路径
     let dbPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/person.db"
     
     var db :Connection!
@@ -22,7 +22,7 @@ struct DBTools {
     let personPhone = Expression<String>("phone") //phone
     let personAddress = Expression<String>("address") //address
     
-     //MARK: - 构造函数，数据库有则连接 没有就创建后连接
+    //MARK: - 构造函数，数据库有则连接 没有就创建后连接
     init() {
         
         do{
@@ -79,8 +79,17 @@ struct DBTools {
         let p = personTable.filter(personName == name)
         
         do {
-            try db.run(p.delete())
-            print("删除数据成功")
+            let row = try  db.run(p.delete())
+            
+            if row == 0 {
+                
+                print("暂无数据删除")
+            }
+                
+            else {
+                
+                print("数据删除成功")
+            }
         } catch {
             
             print("删除数据失败")
@@ -95,8 +104,19 @@ struct DBTools {
         let p = personTable.filter(personName == person.name)
         
         do {
-            try db.run(p.update(personPhone <- person.phone, personAddress <- person.address))
-            print("数据更新成功")
+            let row = try db.run(p.update(personPhone <- person.phone, personAddress <- person.address))
+            
+            if row == 0 {
+                
+                print("暂无数据更新")
+            }
+                
+            else {
+                
+                print("数据更新成功")
+            }
+            
+            
         } catch {
             
             print("数据更新失败")
@@ -122,9 +142,17 @@ struct DBTools {
                 
             }
             
+            if !response.isEmpty {
+                
+                print("数据查询成功")
+                
+            }
             
-            print("数据查询成功")
-            
+            else {
+                
+                print("对不起，暂无数据")
+            }
+ 
             return response
             
         } catch {
