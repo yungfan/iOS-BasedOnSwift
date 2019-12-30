@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ThirdFrameworkUsage' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ThirdFrameworkUsage
+  pod 'FSPagerView'
+  pod 'XLPagerTabStrip', '~> 9.0'
+  pod 'DKImagePickerController', :subspecs => ['PhotoEditor']
+  pod 'Charts'
+  pod 'BMPlayer'
+
+  target 'ThirdFrameworkUsageTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ThirdFrameworkUsageUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
