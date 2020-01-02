@@ -24,7 +24,7 @@ class NewsCellTableViewCell: UITableViewCell {
         if let dataItem = dataItem {
             
             //图片加载用Kingfisher第三方框架
-            self.pic.kf.setImage(with: URL(string: dataItem.thumbnail_pic_s!))
+            self.pic.kf.setImage(with: URL(string: dataItem.thumbnail_pic_s))
             
             self.title.text = dataItem.title
             

@@ -32,9 +32,6 @@ class ViewController: UIViewController {
         
         self.collectionView.collectionViewLayout = layout
         
-        self.collectionView
-
-        
     }
 
 

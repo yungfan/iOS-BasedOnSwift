@@ -14,7 +14,7 @@
 		3CDE563721FB4F0F00D82009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE563521FB4F0F00D82009 /* LaunchScreen.storyboard */; };
 		3CDE564221FB4F1000D82009 /* URLSession____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE564121FB4F1000D82009 /* URLSession____Tests.swift */; };
 		3CDE564D21FB4F1000D82009 /* URLSession____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE564C21FB4F1000D82009 /* URLSession____UITests.swift */; };
-		3CDE565B21FB4F8700D82009 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE565A21FB4F8700D82009 /* wall.png */; };
+		3F69B55623BDEDAD00A6A458 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F69B55523BDEDAD00A6A458 /* wall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		3CDE564821FB4F1000D82009 /* URLSession上传文件UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URLSession上传文件UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDE564C21FB4F1000D82009 /* URLSession____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession____UITests.swift"; sourceTree = "<group>"; };
 		3CDE564E21FB4F1000D82009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CDE565A21FB4F8700D82009 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		3F69B55523BDEDAD00A6A458 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		3CDE562B21FB4F0F00D82009 /* URLSession上传文件 */ = {
 			isa = PBXGroup;
 			children = (
-				3CDE565A21FB4F8700D82009 /* wall.png */,
+				3F69B55523BDEDAD00A6A458 /* wall.png */,
 				3CDE562C21FB4F0F00D82009 /* AppDelegate.swift */,
 				3CDE562E21FB4F0F00D82009 /* ViewController.swift */,
 				3CDE563021FB4F0F00D82009 /* Main.storyboard */,
@@ -235,7 +235,7 @@
 				3CDE563721FB4F0F00D82009 /* LaunchScreen.storyboard in Resources */,
 				3CDE563421FB4F0F00D82009 /* Assets.xcassets in Resources */,
 				3CDE563221FB4F0F00D82009 /* Main.storyboard in Resources */,
-				3CDE565B21FB4F8700D82009 /* wall.png in Resources */,
+				3F69B55623BDEDAD00A6A458 /* wall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +444,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.URLSession----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.URLSession----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

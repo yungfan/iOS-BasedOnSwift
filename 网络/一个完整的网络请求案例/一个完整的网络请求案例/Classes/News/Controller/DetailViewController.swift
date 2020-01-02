@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.new, context: nil)
         
         // 1. 创建一个网页的地址
-        let url = URL(string: self.selectedDataItem.url!)
+        let url = URL(string: self.selectedDataItem.url)
         
         // 2. 通过网址创建一个请求
         if let url = url {

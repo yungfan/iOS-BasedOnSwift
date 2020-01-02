@@ -107,7 +107,7 @@ class NewsViewController: UIViewController {
                     //如果没有错误信息
                     if 0 == news.error_code {
                         
-                        self.tableViewData = news.result?.data
+                        self.tableViewData = news.result.data
                         
                         //刷新表格
                         self.newsTableView?.reloadData()

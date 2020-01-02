@@ -35,11 +35,11 @@ class ViewController: UIViewController {
         //判断是否支持TouchID或FaceID
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             
-            //调用授权，如果支持TouchID则弹出指纹识别，支持FaceID则弹出面容识别,一下情况不会弹出识别对话框
-            //TouchID不可用
+            //调用授权，如果支持TouchID则弹出指纹识别，支持FaceID则弹出面容识别,以下情况不会弹出识别对话框
+            //TouchID、FaceID不可用
             //密码没有被设置到设备的Settings选项中
-            //没有使用Touch ID录入指纹
-            //设备不支持Touch ID
+            //没有使用Touch ID录入指纹、FaceID录入人脸
+            //设备不支持Touch ID、FaceID
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "请用FaceID或者TouchID解锁", reply: { success, error in
                 
                 if success {

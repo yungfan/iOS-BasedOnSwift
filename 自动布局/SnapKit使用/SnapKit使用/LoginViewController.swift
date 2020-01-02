@@ -160,7 +160,7 @@ class LoginViewController: UIViewController {
         //约束恢复
         UIView.animate(withDuration: 0.5, animations: { () -> Void in
             
-            //这里需要注意 由于一开始便宜了50，所以这里需要便宜
+            //这里需要注意 由于一开始偏离了50，所以这里需要偏离
             self.topConstraint?.update(offset: -self.originOffset)
             self.view.layoutIfNeeded()
         })

@@ -9,34 +9,31 @@
 import UIKit
 
 //服务器返回的数据对应的Model
-
-class NewsModel: Codable {
+struct NewsModel: Codable {
     
-    var reason: String?
-    var error_code: Int?
-    var result:Result?
-    
-}
-
-
-class Result: Codable {
-    
-    var stat: String?
-    var data:[DataItem]?
+    var reason: String
+    var error_code: Int
+    var result:Result
     
 }
 
-class DataItem: Codable {
+
+struct Result: Codable {
     
-    var uniquekey: String?
-    var title: String?
-    var date: String?
-    var category: String?
-    var author_name: String?
-    var url: String?
-    var thumbnail_pic_s: String?
-    var thumbnail_pic_s02: String?
-    var thumbnail_pic_s03: String?
+    var stat: String
+    var data:[DataItem]
+    
+}
+
+// 实现Hashable，List中的数据必须实现
+struct DataItem: Codable, Hashable {
+    
+    var title: String
+    var date: String
+    var category: String
+    var author_name: String
+    var url: String
+    var thumbnail_pic_s: String
 }
 
 

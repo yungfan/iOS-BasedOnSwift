@@ -199,10 +199,12 @@
 					};
 					3C12241F2170783F0088C42A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1130;
 						TestTargetID = 3C12240B2170783E0088C42A;
 					};
 					3C12242A2170783F0088C42A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1130;
 						TestTargetID = 3C12240B2170783E0088C42A;
 					};
 				};
@@ -446,7 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -465,7 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -485,7 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftIntro.app/SwiftIntro";
 			};
@@ -506,7 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftIntro.app/SwiftIntro";
 			};
@@ -526,7 +528,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntroUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SwiftIntro;
 			};
@@ -546,7 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungfan.SwiftIntroUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SwiftIntro;
 			};
