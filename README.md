@@ -1,5 +1,8 @@
 # iOS-BasedOnSwift
 
+## [视频教程地址](https://ke.qq.com/cgi-bin/agency?aid=67223)
+
+## 主要更新
 ### 2018.10.12 — 基于Swift 4.2 的iOS开发案例
 ### 2020.01.02 — 代码基于Swift 5 环境重新编译运行并修复如下问题
 1. 数据存储 — SQLite操作，没有拷贝SQlite.swift导致报错
