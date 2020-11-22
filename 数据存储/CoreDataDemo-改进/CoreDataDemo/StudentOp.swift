@@ -27,7 +27,7 @@ class StudentOp {
 
             cdm.saveContext()
         }
-        
+
         queryAll()
     }
 
@@ -39,13 +39,13 @@ class StudentOp {
         } catch {
             print("query error")
         }
-        
+
         print("---------start---------")
-        
+
         for stu in students {
             print(stu.name!)
         }
-        
+
         print("---------end---------")
     }
 
@@ -56,7 +56,7 @@ class StudentOp {
             stu.name = "lisi"
             cdm.saveContext()
         }
-        
+
         queryAll()
     }
 
@@ -66,16 +66,16 @@ class StudentOp {
         if let stu = stu {
             cdm.moc.delete(stu)
         }
-        
+
         queryAll()
     }
-    
+
     func clear() {
         queryAll()
         for stu in students {
             cdm.moc.delete(stu)
         }
-        
+
         queryAll()
     }
 }

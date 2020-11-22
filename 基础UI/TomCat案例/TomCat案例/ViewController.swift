@@ -9,107 +9,76 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var imageArray:[UIImage] = [UIImage]()
-    
-    @IBOutlet weak var tomcat: UIImageView!
-    
+    var imageArray: [UIImage] = [UIImage]()
+
+    @IBOutlet var tomcat: UIImageView!
+
     @IBAction func drink(_ sender: Any) {
-        
-        self.imageArray.removeAll()
-        
+        imageArray.removeAll()
+
         var imgName = ""
-        
-        //1.加载drink的动画图片
-        for index in 0...80 {
-            
-            //drink_XX.jpg
-            
-            if index < 10{
-                
-                 imgName = "drink_0\(index).jpg"
+
+        // 1.加载drink的动画图片
+        for index in 0 ... 80 {
+            // drink_XX.jpg
+
+            if index < 10 {
+                imgName = "drink_0\(index).jpg"
+            } else {
+                imgName = "drink_\(index).jpg"
             }
-            
-            else{
-                
-                 imgName = "drink_\(index).jpg"
-                
-            }
-           
-            //通过名字构造一张图片
-            let image = UIImage.init(named: imgName)
-            
+
+            // 通过名字构造一张图片
+            let image = UIImage(named: imgName)
+
             imageArray.append(image!)
-            
         }
-        
-        
-        //2.让图片进行动画的播放
-        //图片数组
-        self.tomcat.animationImages = imageArray
-        //动画时间
-        self.tomcat.animationDuration = 3.0
-        //动画次数
-        self.tomcat.animationRepeatCount = 1
-        //开始动画
-        self.tomcat.startAnimating()
-        
-        
+
+        // 2.让图片进行动画的播放
+        // 图片数组
+        tomcat.animationImages = imageArray
+        // 动画时间
+        tomcat.animationDuration = 3.0
+        // 动画次数
+        tomcat.animationRepeatCount = 1
+        // 开始动画
+        tomcat.startAnimating()
     }
-    
-    
-    
-    
+
     @IBAction func leftFootClick(_ sender: Any) {
-        
-        
-        
-        self.imageArray.removeAll()
-        
+        imageArray.removeAll()
+
         var imgName = ""
-        
-        //1.加载drink的动画图片
-        for index in 0...29 {
-            
-            //drink_XX.jpg
-            
-            if index < 10{
-                
+
+        // 1.加载drink的动画图片
+        for index in 0 ... 29 {
+            // drink_XX.jpg
+
+            if index < 10 {
                 imgName = "footLeft_0\(index).jpg"
-            }
-                
-            else{
-                
+            } else {
                 imgName = "footLeft_\(index).jpg"
-                
             }
-            
-            //通过名字构造一张图片
-            let image = UIImage.init(named: imgName)
-            
+
+            // 通过名字构造一张图片
+            let image = UIImage(named: imgName)
+
             imageArray.append(image!)
-            
         }
-        
-        
-        //2.让图片进行动画的播放
-        //图片数组
-        self.tomcat.animationImages = imageArray
-        //动画时间
-        self.tomcat.animationDuration = 2.0
-        //动画次数
-        self.tomcat.animationRepeatCount = 1
-        //开始动画
-        self.tomcat.startAnimating()
-        
-        
+
+        // 2.让图片进行动画的播放
+        // 图片数组
+        tomcat.animationImages = imageArray
+        // 动画时间
+        tomcat.animationDuration = 2.0
+        // 动画次数
+        tomcat.animationRepeatCount = 1
+        // 开始动画
+        tomcat.startAnimating()
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
 }
-

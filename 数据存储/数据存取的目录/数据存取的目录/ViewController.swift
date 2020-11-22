@@ -9,34 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         print(Bundle.main.bundlePath)
-        
+
         print(Bundle.main.path(forResource: "Info", ofType: "plist")!)
-        
-        //沙盒的入口
+
+        // 沙盒的入口
         print(NSHomeDirectory())
-        //tmp文件夹
+        // tmp文件夹
         print(NSTemporaryDirectory())
-        
-    
-        //Documents文件夹
-        let documentDir =   NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-        
+
+        // Documents文件夹
+        let documentDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+
         print(documentDir!)
-        
-        
-        //Library文件夹
-        let libraryDir =   NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first
-        
+
+        // Library文件夹
+        let libraryDir = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first
+
         print(libraryDir!)
-        
     }
-
-
 }
-

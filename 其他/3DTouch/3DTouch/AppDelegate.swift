@@ -10,15 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         set3DMenu()
-        
+
         return true
     }
 
@@ -43,54 +41,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
-
 extension AppDelegate {
-    
-    
-    func set3DMenu(){
-        
-        //图标
+    func set3DMenu() {
+        // 图标
         let icon1 = UIApplicationShortcutIcon(type: .audio)
-        
+
         let icon2 = UIApplicationShortcutIcon(type: .alarm)
-        
+
         let icon3 = UIApplicationShortcutIcon(type: .add)
-        
-        //菜单
+
+        // 菜单
         let item1 = UIApplicationShortcutItem(type: "1", localizedTitle: "设置", localizedSubtitle: nil, icon: icon1, userInfo: nil)
-        
+
         let item2 = UIApplicationShortcutItem(type: "2", localizedTitle: "查找", localizedSubtitle: nil, icon: icon2, userInfo: nil)
-        
+
         let item3 = UIApplicationShortcutItem(type: "3", localizedTitle: "搜索", localizedSubtitle: nil, icon: icon3, userInfo: nil)
-        
-        //设置
+
+        // 设置
         UIApplication.shared.shortcutItems = [item1, item2, item3]
-        
     }
-    
-    
-    //点击菜单响应
+
+    // 点击菜单响应
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-        
         if shortcutItem.type == "1" {
-            
-            self.window?.rootViewController?.view.backgroundColor = UIColor.red
+            window?.rootViewController?.view.backgroundColor = UIColor.red
+        } else if shortcutItem.type == "2" {
+            window?.rootViewController?.view.backgroundColor = UIColor.green
+        } else if shortcutItem.type == "3" {
+            window?.rootViewController?.view.backgroundColor = UIColor.blue
         }
-        
-        else if shortcutItem.type == "2" {
-            
-            self.window?.rootViewController?.view.backgroundColor = UIColor.green
-            
-        }
-        
-        else if shortcutItem.type == "3" {
-            
-            self.window?.rootViewController?.view.backgroundColor = UIColor.blue
-        }
-        
     }
 }

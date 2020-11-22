@@ -9,31 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //从Bundle读取JSON
+
+        // 从Bundle读取JSON
         let path = Bundle.main.path(forResource: "data", ofType: "json")
-        
+
         let url = URL(fileURLWithPath: path!)
-        
+
         let data = try? Data(contentsOf: url)
-        
+
         if let data = data {
-            
-            //JSON转[String:Any]
-            let data =  try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String:Any]
-            
-            //调用KVC转模型
+            // JSON转[String:Any]
+            let data = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
+
+            // 调用KVC转模型
             let weather = Weather(dic: data)
-            
+
             print(weather)
-            
         }
     }
-
-
 }
-

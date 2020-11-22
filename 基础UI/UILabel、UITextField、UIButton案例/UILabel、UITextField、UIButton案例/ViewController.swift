@@ -9,33 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var username: UITextField!
 
-    @IBOutlet weak var username: UITextField!
-    
-    @IBOutlet weak var password: UITextField!
-    
+    @IBOutlet var password: UITextField!
+
     @IBAction func loginAA(_ sender: Any) {
-        
-        
         let uname = username.text
         let upwd = password.text
-        
+
         print("用户名为：\(uname!), 密码为：\(upwd!)")
-        
-        
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
-    //触摸屏幕方法
+    // 触摸屏幕方法
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        //退键盘的方式之一
-        self.view.endEditing(true)
+        // 退键盘的方式之一
+        view.endEditing(true)
     }
 }
-

@@ -10,24 +10,19 @@ import UIKit
 import WebKit
 
 class DetailsViewController: UIViewController {
-    
-    var selectedItem:DataItem?
+    var selectedItem: DataItem?
 
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        self.title = selectedItem?.title
-        
-        let wkWebView = WKWebView(frame: self.view.frame)
-        
-        let requset = URLRequest(url: URL(string:(selectedItem?.url)!)!)
-        
+
+        title = selectedItem?.title
+
+        let wkWebView = WKWebView(frame: view.frame)
+
+        let requset = URLRequest(url: URL(string: (selectedItem?.url)!)!)
+
         wkWebView.load(requset)
-        
-        self.view.addSubview(wkWebView)
-        
+
+        view.addSubview(wkWebView)
     }
-    
-
-
 }

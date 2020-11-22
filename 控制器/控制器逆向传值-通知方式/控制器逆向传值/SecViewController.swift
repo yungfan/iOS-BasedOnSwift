@@ -9,30 +9,27 @@
 import UIKit
 
 class SecViewController: UIViewController {
+    @IBOutlet var inputTf: UITextField!
 
-    @IBOutlet weak var inputTf: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func passValueBtnClick(_ sender: Any) {
-        
-        NotificationCenter.default.post(name: NSNotification.Name("abc"), object: nil, userInfo: ["info" : self.inputTf.text!])
-        
-        self.dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: NSNotification.Name("abc"), object: nil, userInfo: ["info": inputTf.text!])
+
+        dismiss(animated: true, completion: nil)
     }
-    
+
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+     }
+     */
 }

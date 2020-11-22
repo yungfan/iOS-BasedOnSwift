@@ -9,20 +9,14 @@
 import UIKit
 
 class ItemViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Item"
-        
-        
-        self.navigationItem.rightBarButtonItem =   UIBarButtonItem(title:  "详情", style: UIBarButtonItem.Style.plain, target: self, action: #selector(rightClick))
-        
-    }
-    
-    
-    @objc func rightClick(button:UIBarButtonItem){
-        
-        self.navigationController?.pushViewController(DetailViewController(), animated: true)
+        navigationItem.title = "Item"
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "详情", style: UIBarButtonItem.Style.plain, target: self, action: #selector(rightClick))
     }
 
+    @objc func rightClick(button: UIBarButtonItem) {
+        navigationController?.pushViewController(DetailViewController(), animated: true)
+    }
 }

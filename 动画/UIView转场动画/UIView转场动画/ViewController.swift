@@ -9,42 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var redView: UIView!
+    @IBOutlet var redView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-       
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        
         /**
-         //方式一
-        UIView.transition(with: self.redView, duration: 2.0, options: .transitionCurlUp, animations: {
+          //方式一
+         UIView.transition(with: self.redView, duration: 2.0, options: .transitionCurlUp, animations: {
 
-            let orangeView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+             let orangeView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
-            orangeView.backgroundColor = UIColor.orange
+             orangeView.backgroundColor = UIColor.orange
 
-            self.redView .addSubview(orangeView)
+             self.redView .addSubview(orangeView)
 
-
-        }, completion: nil)
-        */
-        
-        /**
-        //方式二
-        let orangeView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        
-        orangeView.backgroundColor = UIColor.orange
-        
-        UIView.transition(from: self.redView, to: orangeView, duration: 2.0, options: .transitionFlipFromRight, completion: nil)
+         }, completion: nil)
          */
+
+        /**
+         //方式二
+         let orangeView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+
+         orangeView.backgroundColor = UIColor.orange
+
+         UIView.transition(from: self.redView, to: orangeView, duration: 2.0, options: .transitionFlipFromRight, completion: nil)
+          */
     }
-
-
 }
-

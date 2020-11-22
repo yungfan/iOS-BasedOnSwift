@@ -6,24 +6,20 @@
 //  Copyright © 2019 ABC. All rights reserved.
 //
 
-import UIKit
 import Kingfisher
+import UIKit
 
 class NewsTableViewCell: UITableViewCell {
+    @IBOutlet var img: UIImageView!
+    @IBOutlet var title: UILabel!
+    @IBOutlet var author: UILabel!
+    @IBOutlet var date: UILabel!
 
-    @IBOutlet weak var img: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var author: UILabel!
-    @IBOutlet weak var date: UILabel!
-    
-    func setupCell(item:DataItem){
-        
+    func setupCell(item: DataItem) {
         let url = URL(string: item.thumbnail_pic_s!)
         img.kf.setImage(with: url!)
         title.text = item.title
         author.text = item.author_name
         date.text = item.date
-        
     }
-    
 }

@@ -10,36 +10,31 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        //XIB的名字是OneView或者OneViewController
-        //let vc = OneViewController()
-        
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        // XIB的名字是OneView或者OneViewController
+        // let vc = OneViewController()
+
         let vc = TwoViewController()
-        
-        //从XIB转为UIView
+
+        // 从XIB转为UIView
         let xibView = Bundle.main.loadNibNamed("Common", owner: vc, options: nil)?.first
-        
+
         if let xibView = xibView {
-            
             vc.view = xibView as? UIView
         }
 
-        
         vc.view.backgroundColor = UIColor.red
-        
-        self.window?.rootViewController = vc
 
-        self.window?.makeKeyAndVisible()
-        
-        
+        window?.rootViewController = vc
+
+        window?.makeKeyAndVisible()
+
         return true
     }
 
@@ -64,7 +59,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

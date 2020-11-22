@@ -55,7 +55,7 @@ class StudentOp {
             cdm.moc.delete(stu)
         }
     }
-    
+
     func deleteAll() {
         queryAll()
         for stu in students {

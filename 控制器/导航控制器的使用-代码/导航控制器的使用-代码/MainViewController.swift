@@ -9,36 +9,29 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.navigationItem.title = "Main"
-        
-        
-        self.navigationItem.rightBarButtonItem =   UIBarButtonItem(title:  "列表", style: UIBarButtonItem.Style.plain, target: self, action: #selector(rightClick))
-    
+
+        navigationItem.title = "Main"
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "列表", style: UIBarButtonItem.Style.plain, target: self, action: #selector(rightClick))
     }
 
-    
-    @objc func rightClick(button:UIBarButtonItem){
-        
+    @objc func rightClick(button: UIBarButtonItem) {
         let listVC = ListViewController()
-        
-        self.navigationController?.pushViewController(listVC, animated: true)
-        
+
+        navigationController?.pushViewController(listVC, animated: true)
     }
 
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+     }
+     */
 }

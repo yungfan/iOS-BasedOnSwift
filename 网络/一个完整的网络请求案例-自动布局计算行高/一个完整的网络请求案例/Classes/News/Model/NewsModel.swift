@@ -8,26 +8,20 @@
 
 import UIKit
 
-//服务器返回的数据对应的Model
+// 服务器返回的数据对应的Model
 
 class NewsModel: Codable {
-    
     var reason: String?
     var error_code: Int?
-    var result:Result?
-    
+    var result: Result?
 }
 
-
 class Result: Codable {
-    
     var stat: String?
-    var data:[DataItem]?
-    
+    var data: [DataItem]?
 }
 
 class DataItem: Codable {
-    
     var uniquekey: String?
     var title: String?
     var date: String?
@@ -38,6 +32,3 @@ class DataItem: Codable {
     var thumbnail_pic_s02: String?
     var thumbnail_pic_s03: String?
 }
-
-
-

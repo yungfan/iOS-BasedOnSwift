@@ -8,43 +8,40 @@
 
 import UIKit
 
-//1.定义一个协议
+// 1.定义一个协议
 protocol passValueProtocol {
-    //传的是什么参数 就在函数的参数设置成什么
-    func passValue (info :String?)
+    // 传的是什么参数 就在函数的参数设置成什么
+    func passValue(info: String?)
 }
 
 class SecViewController: UIViewController {
-    
-    //2. 在被代理对象中声明一个属性delegate 遵循协议
-    
-    var delegate : passValueProtocol?
+    // 2. 在被代理对象中声明一个属性delegate 遵循协议
 
-    @IBOutlet weak var inputTf: UITextField!
-    
+    var delegate: passValueProtocol?
+
+    @IBOutlet var inputTf: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func passValueBtnClick(_ sender: Any) {
-        
-        //3.真正传值的时候调用代理完成
-        
-        self.delegate?.passValue(info: self.inputTf.text)
-        
-        self.dismiss(animated: true, completion: nil)
+        // 3.真正传值的时候调用代理完成
+
+        delegate?.passValue(info: inputTf.text)
+
+        dismiss(animated: true, completion: nil)
     }
-    
+
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+     }
+     */
 }

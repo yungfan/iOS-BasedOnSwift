@@ -10,21 +10,16 @@ import UIKit
 import XLPagerTabStrip
 
 class XLPagerTabStripVCOne: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.red
     }
-
-
 }
 
 extension XLPagerTabStripVCOne: IndicatorInfoProvider {
-    
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-      return IndicatorInfo(title: "头条")
+        return IndicatorInfo(title: "头条")
     }
-    
 }

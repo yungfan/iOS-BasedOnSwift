@@ -9,69 +9,49 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var pinwheel: UIImageView!
 
-    @IBOutlet weak var pinwheel: UIImageView!
-    
-    @IBOutlet weak var username: UITextField!
-    
-    @IBOutlet weak var password: UITextField!
-    
-    @IBOutlet weak var loginBtn: UIButton!
-    
-    
-    
+    @IBOutlet var username: UITextField!
+
+    @IBOutlet var password: UITextField!
+
+    @IBOutlet var loginBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        self.rotatePinWheel()
-        
-        self.loginAnimate()
+
+        rotatePinWheel()
+
+        loginAnimate()
     }
-    
-    func rotatePinWheel(){
-        
+
+    func rotatePinWheel() {
         UIView.animate(withDuration: 2.0, delay: 0, options: .curveLinear, animations: {
-             self.pinwheel.transform = CGAffineTransform.init(rotationAngle: CGFloat(Float.pi)).concatenating(self.pinwheel.transform)
-        }) { (isFinished) in
-            
-            
+            self.pinwheel.transform = CGAffineTransform(rotationAngle: CGFloat(Float.pi)).concatenating(self.pinwheel.transform)
+        }) { _ in
+
             self.rotatePinWheel()
         }
-
     }
-    
-   
-    func loginAnimate(){
-        
+
+    func loginAnimate() {
         UIView.animate(withDuration: 2.0, animations: {
-            
             self.username.center = CGPoint(x: self.view.center.x, y: self.username.center.y)
-            
-        }) { (isFinished) in
-            
-            
+
+        }) { _ in
+
             UIView.animate(withDuration: 2.0, animations: {
-                
-                 self.password.center = CGPoint(x: self.view.center.x, y: self.password.center.y)
-                
-            }, completion: { (isFinished) in
-                
-                
+                self.password.center = CGPoint(x: self.view.center.x, y: self.password.center.y)
+
+            }, completion: { _ in
+
                 UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .curveLinear, animations: {
-                    
                     self.loginBtn.center = CGPoint(x: self.view.center.x, y: 390)
-                    
+
                 }, completion: nil)
-                
-                
+
             })
-            
         }
-        
-        
-        
     }
-
 }
-

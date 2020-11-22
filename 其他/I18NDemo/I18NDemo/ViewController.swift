@@ -9,24 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let alert = UIAlertController(title: NSLocalizedString("title", comment: "") , message: NSLocalizedString("message", comment: ""), preferredStyle: .alert)
-        
-        
-        let action = UIAlertAction(title:NSLocalizedString("btnTitle", comment: ""), style: .cancel, handler: nil)
-        
+        let alert = UIAlertController(title: NSLocalizedString("title", comment: ""), message: NSLocalizedString("message", comment: ""), preferredStyle: .alert)
+
+        let action = UIAlertAction(title: NSLocalizedString("btnTitle", comment: ""), style: .cancel, handler: nil)
+
         alert.addAction(action)
-        
-        self.present(alert, animated: true, completion: nil)
+
+        present(alert, animated: true, completion: nil)
     }
-
 }
-

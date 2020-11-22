@@ -9,36 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var infoLb: UILabel!
 
-    @IBOutlet weak var infoLb: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let secVC:SecViewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
-        
-        //2.将当前的控制器成为SecViewController中的delegate
-        
+        let secVC: SecViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
+
+        // 2.将当前的控制器成为SecViewController中的delegate
+
         secVC.delegate = self
-        
-        self.present(secVC, animated: true, completion: nil)
-        
-    }
 
+        present(secVC, animated: true, completion: nil)
+    }
 }
 
-//1.遵守协议
+// 1.遵守协议
 
-extension ViewController : passValueProtocol{
+extension ViewController: passValueProtocol {
     func passValue(info: String?) {
-      
-        self.infoLb.text = info
+        infoLb.text = info
     }
-  
 }
-

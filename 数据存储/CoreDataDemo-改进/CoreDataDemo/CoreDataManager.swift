@@ -9,15 +9,14 @@ import CoreData
 import UIKit
 
 class CoreDataManager {
-    
     static let shared = CoreDataManager()
-    
-    let app = (UIApplication.shared.delegate) as! AppDelegate
-    
+
+    let app = UIApplication.shared.delegate as! AppDelegate
+
     lazy var moc: NSManagedObjectContext = {
-        return app.persistentContainer.viewContext
+        app.persistentContainer.viewContext
     }()
-    
+
     func saveContext() {
         app.saveContext()
     }

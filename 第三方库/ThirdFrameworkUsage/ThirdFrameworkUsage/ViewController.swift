@@ -9,52 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    fileprivate let titles = ["轮播器类","指示器类","图片类","图表类","播放器类"]
-    
+    fileprivate let titles = ["轮播器类", "指示器类", "图片类", "图表类", "播放器类"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-
-
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.titles.count
+        titles.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "third", for: indexPath)
-        cell.textLabel?.text = self.titles[indexPath.row]
-        
+        cell.textLabel?.text = titles[indexPath.row]
+
         return cell
     }
-    
 }
 
 extension ViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         switch indexPath.row {
         case 0:
-            
-            self.navigationController?.pushViewController(FSPagerViewViewController(), animated: true)
-            
+
+            navigationController?.pushViewController(FSPagerViewViewController(), animated: true)
+
         case 1:
-            self.navigationController?.pushViewController(XLPagerTabStripViewController(), animated: true)
+            navigationController?.pushViewController(XLPagerTabStripViewController(), animated: true)
         case 2:
-            self.navigationController?.pushViewController(DKImagePickerControllerViewController(), animated: true)
+            navigationController?.pushViewController(DKImagePickerControllerViewController(), animated: true)
         case 3:
-            self.navigationController?.pushViewController(ChartsViewController(), animated: true)
+            navigationController?.pushViewController(ChartsViewController(), animated: true)
         case 4:
-            self.navigationController?.pushViewController(BMPlayerViewController(), animated: true)
-            
+            navigationController?.pushViewController(BMPlayerViewController(), animated: true)
+
         default:
             print("error")
         }
-        
     }
 }

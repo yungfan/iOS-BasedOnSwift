@@ -9,112 +9,83 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var newsTableView: UITableView!
 
-    @IBOutlet weak var newsTableView: UITableView!
-    
-    var data:[DataItem]?
-    
+    var data: [DataItem]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        self.newsTableView.dataSource = self
-        
-        self.newsTableView.delegate = self
-        
-        self.newsTableView.rowHeight = 110.0
-        
-        self.getNewsData()
+
+        newsTableView.dataSource = self
+
+        newsTableView.delegate = self
+
+        newsTableView.rowHeight = 110.0
+
+        getNewsData()
     }
 }
 
 extension ViewController {
-    
     func getNewsData() {
-        
         let url = URL(string: "http://v.juhe.cn/toutiao/index?type=top&key=d1287290b45a69656de361382bc56dcd")
-        
+
         let urlRequest = URLRequest(url: url!)
-        
-        
+
         let session = URLSession(configuration: URLSessionConfiguration.default)
-        
-        let task = session.dataTask(with: urlRequest) { (data, response, error) in
-            
-            
+
+        let task = session.dataTask(with: urlRequest) { data, _, error in
+
             let decoder = JSONDecoder()
-            
+
             if let data = data {
-                
                 do {
-                    
                     let newsModel = try decoder.decode(NewsModel.self, from: data)
-                    
+
                     DispatchQueue.main.async {
-                        
                         self.data = newsModel.result?.data
-                        
+
                         self.newsTableView.reloadData()
-                        
                     }
-                }
-                
-                catch{
-                    
+                } catch {
                     print(error)
-                    
                 }
-                
-                
             }
-           
         }
-        
-       task.resume()
+
+        task.resume()
     }
-  
 }
 
-
-extension ViewController : UITableViewDataSource{
-    
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         if let data = self.data {
-            
             return data.count
         }
-        
+
         return 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell: NewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "news", for: indexPath) as! NewsTableViewCell
-        
-        let dataItem = self.data![indexPath.row]
-        
+
+        let dataItem = data![indexPath.row]
+
         cell.setupCell(item: dataItem)
-        
+
         return cell
     }
-    
-    
-    
 }
 
-extension ViewController : UITableViewDelegate{
-    
+extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let dataItem = self.data![indexPath.row]
-        
+        let dataItem = data![indexPath.row]
+
         let detailsVC = DetailsViewController()
-        
+
         detailsVC.selectedItem = dataItem
-        
-        self.navigationController?.pushViewController(detailsVC, animated: true)
-        
+
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
-    
 }

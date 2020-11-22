@@ -6,12 +6,10 @@
 //
 //
 
-import Foundation
 import CoreData
-
+import Foundation
 
 extension Student {
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Student> {
         return NSFetchRequest<Student>(entityName: "Student")
     }
@@ -19,9 +17,7 @@ extension Student {
     @NSManaged public var name: String?
     @NSManaged public var age: Int16
     @NSManaged public var sex: String?
-
 }
 
-extension Student : Identifiable {
-
+extension Student: Identifiable {
 }

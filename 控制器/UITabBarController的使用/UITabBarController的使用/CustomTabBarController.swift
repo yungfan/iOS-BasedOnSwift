@@ -9,32 +9,23 @@
 import UIKit
 
 class CustomTabBarController: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.delegate  = self
+
+        delegate = self
     }
-    
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
-        //item.badgeValue = nil
+        // item.badgeValue = nil
     }
-
 }
 
-extension CustomTabBarController : UITabBarControllerDelegate{
-    
-    
+extension CustomTabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        
         viewController.tabBarItem.badgeValue = nil
-        
+
         viewController.view.backgroundColor = UIColor.red
-        
     }
-    
 }

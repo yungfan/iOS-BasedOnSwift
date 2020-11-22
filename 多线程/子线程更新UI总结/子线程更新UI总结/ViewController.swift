@@ -9,78 +9,61 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var infoLb: UILabel!
-    
+    @IBOutlet var infoLb: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
-    // MARK:- Thread模式
-    func threadMode(){
-        
-        let thread =  Thread {
-            
+
+    // MARK: - Thread模式
+
+    func threadMode() {
+        let thread = Thread {
             print("\(Thread.current)执行任务")
-            
+
             Thread.sleep(forTimeInterval: 2)
-            
+
             self.perform(#selector(self.updateUI), on: Thread.main, with: nil, waitUntilDone: false)
-            
         }
-        
+
         thread.start()
-        
     }
-    
-    
-    // MARK:- GCD模式
-    func gcdMode(){
-        
+
+    // MARK: - GCD模式
+
+    func gcdMode() {
         DispatchQueue.global().async {
-            
             print("\(Thread.current)执行任务")
-            
+
             Thread.sleep(forTimeInterval: 2)
-            
+
             DispatchQueue.main.async {
-                
                 self.infoLb.text = "GCD方式更新UI"
             }
-            
         }
-        
     }
-    
-    
-    // MARK:- Operation模式
-    func operationMode(){
-        
+
+    // MARK: - Operation模式
+
+    func operationMode() {
         OperationQueue().addOperation {
-            
             print("\(Thread.current)执行任务")
-            
+
             Thread.sleep(forTimeInterval: 2)
-            
+
             OperationQueue.main.addOperation {
-                
                 self.infoLb.text = "Operation方式更新UI"
             }
         }
     }
-    
-    
-    @objc fileprivate func updateUI(){
-        
-        self.infoLb.text = "Thread方式更新UI"
+
+    @objc fileprivate func updateUI() {
+        infoLb.text = "Thread方式更新UI"
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        //threadMode()
+        // threadMode()
         gcdMode()
-        //operationMode()
+        // operationMode()
     }
 }
-

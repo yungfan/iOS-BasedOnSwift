@@ -9,9 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var data:Data!
-    var origin:Person!
+    var data: Data!
+    var origin: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,37 +18,26 @@ class ViewController: UIViewController {
     }
 
     @IBAction func archiver(_ sender: Any) {
-        
-        let p =  Person()
+        let p = Person()
         p.age = 20
         p.name = "zhangsan"
-        
+
         do {
-            
             try data = NSKeyedArchiver.archivedData(withRootObject: p, requiringSecureCoding: true)
-        } catch  {
-        
+        } catch {
             print(error)
         }
-        
-        
     }
-    
+
     @IBAction func unarchiver(_ sender: Any) {
-        
         do {
-            try origin =  NSKeyedUnarchiver.unarchivedObject(ofClass: Person.self, from: data)
-            
+            try origin = NSKeyedUnarchiver.unarchivedObject(ofClass: Person.self, from: data)
+
             print(origin!.age!)
             print(origin!.name!)
-        
-            
-        } catch  {
-            
+
+        } catch {
             print(error)
         }
-        
-        
     }
 }
-

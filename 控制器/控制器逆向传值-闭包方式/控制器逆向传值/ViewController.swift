@@ -9,30 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var infoLb: UILabel!
 
-    @IBOutlet weak var infoLb: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let secVC:SecViewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
-        
+        let secVC: SecViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
+
         secVC.discloure = {
-            
-            (info:String?) -> Void in
-            
+            (info: String?) -> Void in
+
             self.infoLb.text = info
-            
         }
-        
-        self.present(secVC, animated: true, completion: nil)
-        
+
+        present(secVC, animated: true, completion: nil)
     }
-
 }
-

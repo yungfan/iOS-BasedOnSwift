@@ -6,33 +6,28 @@
 //  Copyright © 2019 ABC. All rights reserved.
 //
 
-import UIKit
 import Kingfisher
+import UIKit
 
 class NewsCellTableViewCell: UITableViewCell {
+    @IBOutlet var pic: UIImageView!
 
-    @IBOutlet weak var pic: UIImageView!
-    
-    @IBOutlet weak var title: UILabel!
-    
-    @IBOutlet weak var author: UILabel!
-    
-    @IBOutlet weak var date: UILabel!
-    
-    func configUI(dataItem : DataItem?){
-        
+    @IBOutlet var title: UILabel!
+
+    @IBOutlet var author: UILabel!
+
+    @IBOutlet var date: UILabel!
+
+    func configUI(dataItem: DataItem?) {
         if let dataItem = dataItem {
-            
-            //图片加载用Kingfisher第三方框架
-            self.pic.kf.setImage(with: URL(string: dataItem.thumbnail_pic_s!))
-            
-            self.title.text = dataItem.title
-            
-            self.author.text = dataItem.author_name
-            
-            self.date.text = dataItem.date
+            // 图片加载用Kingfisher第三方框架
+            pic.kf.setImage(with: URL(string: dataItem.thumbnail_pic_s!))
+
+            title.text = dataItem.title
+
+            author.text = dataItem.author_name
+
+            date.text = dataItem.date
         }
-    
     }
-    
 }

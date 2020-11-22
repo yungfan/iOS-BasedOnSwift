@@ -9,34 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var tabBar: UITabBar!
 
-    @IBOutlet weak var tabBar: UITabBar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        self.tabBar.selectedItem = self.tabBar.items?[1]
-        
-        self.tabBar.items?.last?.badgeValue = "4"
-        
-        self.tabBar.delegate = self
 
+        tabBar.selectedItem = tabBar.items?[1]
+
+        tabBar.items?.last?.badgeValue = "4"
+
+        tabBar.delegate = self
     }
-
-
 }
 
-
-extension ViewController : UITabBarDelegate{
-    
+extension ViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
         print(item.title!)
-        
+
         item.badgeValue = nil
     }
-    
 }

@@ -8,26 +8,20 @@
 
 import UIKit
 
-//服务器返回的数据对应的Model
+// 服务器返回的数据对应的Model
 struct NewsModel: Codable {
-    
     var reason: String
     var error_code: Int
-    var result:Result
-    
+    var result: Result
 }
 
-
 struct Result: Codable {
-    
     var stat: String
-    var data:[DataItem]
-    
+    var data: [DataItem]
 }
 
 // 实现Hashable，List中的数据必须实现
 struct DataItem: Codable, Hashable {
-    
     var title: String
     var date: String
     var category: String
@@ -35,6 +29,3 @@ struct DataItem: Codable, Hashable {
     var url: String
     var thumbnail_pic_s: String
 }
-
-
-

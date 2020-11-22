@@ -9,36 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var infoLb: UILabel!
 
-    @IBOutlet weak var infoLb: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+
         // 先监听通知 后发送
         NotificationCenter.default.addObserver(self, selector: #selector(handlerNoti), name: NSNotification.Name("abc"), object: nil)
- 
-        
     }
-    
-    @objc func handlerNoti(noti:Notification) {
-        
+
+    @objc func handlerNoti(noti: Notification) {
         let userInfo = noti.userInfo
-        
-        self.infoLb.text = userInfo!["info"] as? String
-        
+
+        infoLb.text = userInfo!["info"] as? String
     }
 
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let secVC:SecViewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
-        
-        self.present(secVC, animated: true, completion: nil)
-        
+        let secVC: SecViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
+
+        present(secVC, animated: true, completion: nil)
     }
-
 }
-

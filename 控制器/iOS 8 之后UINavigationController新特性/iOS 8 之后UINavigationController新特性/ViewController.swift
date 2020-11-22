@@ -9,26 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //self.navigationController?.hidesBarsWhenVerticallyCompact = true
-        
-        
-        //self.navigationController?.hidesBarsOnTap = true
-        
-        //self.navigationController?.hidesBarsWhenKeyboardAppears = true
-        
-        self.navigationController?.hidesBarsOnSwipe = true
+
+        // self.navigationController?.hidesBarsWhenVerticallyCompact = true
+
+        // self.navigationController?.hidesBarsOnTap = true
+
+        // self.navigationController?.hidesBarsWhenKeyboardAppears = true
+
+        navigationController?.hidesBarsOnSwipe = true
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
 }
-
-
-

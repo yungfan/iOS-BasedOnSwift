@@ -6,32 +6,29 @@
 //  Copyright © 2019 abc. All rights reserved.
 //
 
-import UIKit
 import MapKit
+import UIKit
 
 // MARK: - Annotation - 大头针模型
+
 class MapFlag: NSObject, MKAnnotation {
-    
     let title: String?
-    
+
     let subtitle: String?
-    
+
     let coordinate: CLLocationCoordinate2D
-    
-    let urlString:String
-    
-    init(title: String, subtitle:String, coordinate: CLLocationCoordinate2D, url : String) {
-        
+
+    let urlString: String
+
+    init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D, url: String) {
         self.title = title
-        
+
         self.subtitle = subtitle
-        
+
         self.coordinate = coordinate
-        
-        self.urlString = url
-        
+
+        urlString = url
+
         super.init()
     }
-    
 }
-
