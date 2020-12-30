@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C90846F259BDEF70093C751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90846E259BDEF70093C751 /* AppDelegate.swift */; };
+		3C908471259BDEF70093C751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908470259BDEF70093C751 /* SceneDelegate.swift */; };
+		3C908473259BDEF70093C751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908472259BDEF70093C751 /* ViewController.swift */; };
+		3C908476259BDEF70093C751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C908474259BDEF70093C751 /* Main.storyboard */; };
+		3C908478259BDEF80093C751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C908477259BDEF80093C751 /* Assets.xcassets */; };
+		3C90847B259BDEF80093C751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C908479259BDEF80093C751 /* LaunchScreen.storyboard */; };
+		3C908486259BDEF80093C751 /* AFN____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908485259BDEF80093C751 /* AFN____Tests.swift */; };
+		3C908491259BDEF80093C751 /* AFN____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908490259BDEF80093C751 /* AFN____UITests.swift */; };
+		3C9084AF259BE46A0093C751 /* Pods_AFN上传文件.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9084AE259BE46A0093C751 /* Pods_AFN上传文件.framework */; };
+		3C9084B0259BE46A0093C751 /* Pods_AFN上传文件.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9084AE259BE46A0093C751 /* Pods_AFN上传文件.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C9084B5259BE8FB0093C751 /* 掘金：致iOSer的一封信.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9084B4259BE8FA0093C751 /* 掘金：致iOSer的一封信.png */; };
+		83DE415A52686C5422E8C384 /* Pods_AFN_____AFN____UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA42D800FBEDD4039DB28AB /* Pods_AFN_____AFN____UITests.framework */; };
+		8F5AEED087C11CD568DCF453 /* Pods_AFN____Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1A4A54D456A1C0F3097C35 /* Pods_AFN____Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C908482259BDEF80093C751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C908463259BDEF70093C751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C90846A259BDEF70093C751;
+			remoteInfo = "AFN上传文件";
+		};
+		3C90848D259BDEF80093C751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C908463259BDEF70093C751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C90846A259BDEF70093C751;
+			remoteInfo = "AFN上传文件";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C9084B1259BE46A0093C751 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C9084B0259BE46A0093C751 /* Pods_AFN上传文件.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BE80C37351DFA394FED82C5 /* Pods-AFN上传文件Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件Tests.release.xcconfig"; path = "Target Support Files/Pods-AFN上传文件Tests/Pods-AFN上传文件Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2CFD5733B25F7E7B0474921F /* Pods-AFN上传文件Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件Tests.debug.xcconfig"; path = "Target Support Files/Pods-AFN上传文件Tests/Pods-AFN上传文件Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C90846B259BDEF70093C751 /* AFN上传文件.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFN上传文件.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C90846E259BDEF70093C751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C908470259BDEF70093C751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C908472259BDEF70093C751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C908475259BDEF70093C751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C908477259BDEF80093C751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C90847A259BDEF80093C751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C90847C259BDEF80093C751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C908481259BDEF80093C751 /* AFN上传文件Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFN上传文件Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C908485259BDEF80093C751 /* AFN____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFN____Tests.swift"; sourceTree = "<group>"; };
+		3C908487259BDEF80093C751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C90848C259BDEF80093C751 /* AFN上传文件UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFN上传文件UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C908490259BDEF80093C751 /* AFN____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFN____UITests.swift"; sourceTree = "<group>"; };
+		3C908492259BDEF80093C751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9084AE259BE46A0093C751 /* Pods_AFN上传文件.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_AFN上传文件.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9084B4259BE8FA0093C751 /* 掘金：致iOSer的一封信.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "掘金：致iOSer的一封信.png"; sourceTree = "<group>"; };
+		4DA42D800FBEDD4039DB28AB /* Pods_AFN_____AFN____UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AFN_____AFN____UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BA99B04E1441A9E1D9892E /* Pods-AFN上传文件-AFN上传文件UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件-AFN上传文件UITests.debug.xcconfig"; path = "Target Support Files/Pods-AFN上传文件-AFN上传文件UITests/Pods-AFN上传文件-AFN上传文件UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		543FC5C9B9FB2DAD2BF68C27 /* Pods-AFN上传文件.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件.debug.xcconfig"; path = "Target Support Files/Pods-AFN上传文件/Pods-AFN上传文件.debug.xcconfig"; sourceTree = "<group>"; };
+		6174F0EB2B3CE4C14EFE8800 /* Pods_AFN____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AFN____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C23372030B5554274117B4E /* Pods-AFN上传文件-AFN上传文件UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件-AFN上传文件UITests.release.xcconfig"; path = "Target Support Files/Pods-AFN上传文件-AFN上传文件UITests/Pods-AFN上传文件-AFN上传文件UITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6DF8994354D74BCF25E7FA9 /* Pods-AFN上传文件.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFN上传文件.release.xcconfig"; path = "Target Support Files/Pods-AFN上传文件/Pods-AFN上传文件.release.xcconfig"; sourceTree = "<group>"; };
+		BE1A4A54D456A1C0F3097C35 /* Pods_AFN____Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AFN____Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C908468259BDEF70093C751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9084AF259BE46A0093C751 /* Pods_AFN上传文件.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C90847E259BDEF80093C751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5AEED087C11CD568DCF453 /* Pods_AFN____Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C908489259BDEF80093C751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DE415A52686C5422E8C384 /* Pods_AFN_____AFN____UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D84D044391096AB595BAE9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9084AE259BE46A0093C751 /* Pods_AFN上传文件.framework */,
+				6174F0EB2B3CE4C14EFE8800 /* Pods_AFN____.framework */,
+				4DA42D800FBEDD4039DB28AB /* Pods_AFN_____AFN____UITests.framework */,
+				BE1A4A54D456A1C0F3097C35 /* Pods_AFN____Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C908462259BDEF70093C751 = {
+			isa = PBXGroup;
+			children = (
+				3C90846D259BDEF70093C751 /* AFN上传文件 */,
+				3C908484259BDEF80093C751 /* AFN上传文件Tests */,
+				3C90848F259BDEF80093C751 /* AFN上传文件UITests */,
+				3C90846C259BDEF70093C751 /* Products */,
+				F1997069B4D1B69DB47961D6 /* Pods */,
+				1D84D044391096AB595BAE9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C90846C259BDEF70093C751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C90846B259BDEF70093C751 /* AFN上传文件.app */,
+				3C908481259BDEF80093C751 /* AFN上传文件Tests.xctest */,
+				3C90848C259BDEF80093C751 /* AFN上传文件UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C90846D259BDEF70093C751 /* AFN上传文件 */ = {
+			isa = PBXGroup;
+			children = (
+				3C9084B4259BE8FA0093C751 /* 掘金：致iOSer的一封信.png */,
+				3C90846E259BDEF70093C751 /* AppDelegate.swift */,
+				3C908470259BDEF70093C751 /* SceneDelegate.swift */,
+				3C908472259BDEF70093C751 /* ViewController.swift */,
+				3C908474259BDEF70093C751 /* Main.storyboard */,
+				3C908477259BDEF80093C751 /* Assets.xcassets */,
+				3C908479259BDEF80093C751 /* LaunchScreen.storyboard */,
+				3C90847C259BDEF80093C751 /* Info.plist */,
+			);
+			path = "AFN上传文件";
+			sourceTree = "<group>";
+		};
+		3C908484259BDEF80093C751 /* AFN上传文件Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C908485259BDEF80093C751 /* AFN____Tests.swift */,
+				3C908487259BDEF80093C751 /* Info.plist */,
+			);
+			path = "AFN上传文件Tests";
+			sourceTree = "<group>";
+		};
+		3C90848F259BDEF80093C751 /* AFN上传文件UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C908490259BDEF80093C751 /* AFN____UITests.swift */,
+				3C908492259BDEF80093C751 /* Info.plist */,
+			);
+			path = "AFN上传文件UITests";
+			sourceTree = "<group>";
+		};
+		F1997069B4D1B69DB47961D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				543FC5C9B9FB2DAD2BF68C27 /* Pods-AFN上传文件.debug.xcconfig */,
+				B6DF8994354D74BCF25E7FA9 /* Pods-AFN上传文件.release.xcconfig */,
+				52BA99B04E1441A9E1D9892E /* Pods-AFN上传文件-AFN上传文件UITests.debug.xcconfig */,
+				9C23372030B5554274117B4E /* Pods-AFN上传文件-AFN上传文件UITests.release.xcconfig */,
+				2CFD5733B25F7E7B0474921F /* Pods-AFN上传文件Tests.debug.xcconfig */,
+				0BE80C37351DFA394FED82C5 /* Pods-AFN上传文件Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C90846A259BDEF70093C751 /* AFN上传文件 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C908495259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件" */;
+			buildPhases = (
+				8B8B3A152A30E1A9BABAA7C6 /* [CP] Check Pods Manifest.lock */,
+				3C908467259BDEF70093C751 /* Sources */,
+				3C908468259BDEF70093C751 /* Frameworks */,
+				3C908469259BDEF70093C751 /* Resources */,
+				5EA921AFC34CCF302F274B37 /* [CP] Embed Pods Frameworks */,
+				3C9084B1259BE46A0093C751 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AFN上传文件";
+			productName = "AFN上传文件";
+			productReference = 3C90846B259BDEF70093C751 /* AFN上传文件.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C908480259BDEF80093C751 /* AFN上传文件Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C908498259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件Tests" */;
+			buildPhases = (
+				DE94ACC24AA1D0D336186052 /* [CP] Check Pods Manifest.lock */,
+				3C90847D259BDEF80093C751 /* Sources */,
+				3C90847E259BDEF80093C751 /* Frameworks */,
+				3C90847F259BDEF80093C751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C908483259BDEF80093C751 /* PBXTargetDependency */,
+			);
+			name = "AFN上传文件Tests";
+			productName = "AFN上传文件Tests";
+			productReference = 3C908481259BDEF80093C751 /* AFN上传文件Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C90848B259BDEF80093C751 /* AFN上传文件UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C90849B259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件UITests" */;
+			buildPhases = (
+				97F82A2D8EFE58534EC12F0C /* [CP] Check Pods Manifest.lock */,
+				3C908488259BDEF80093C751 /* Sources */,
+				3C908489259BDEF80093C751 /* Frameworks */,
+				3C90848A259BDEF80093C751 /* Resources */,
+				1DFB1F185A1386789D08AFBA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C90848E259BDEF80093C751 /* PBXTargetDependency */,
+			);
+			name = "AFN上传文件UITests";
+			productName = "AFN上传文件UITests";
+			productReference = 3C90848C259BDEF80093C751 /* AFN上传文件UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C908463259BDEF70093C751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3C90846A259BDEF70093C751 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3C908480259BDEF80093C751 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3C90846A259BDEF70093C751;
+					};
+					3C90848B259BDEF80093C751 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 3C90846A259BDEF70093C751;
+					};
+				};
+			};
+			buildConfigurationList = 3C908466259BDEF70093C751 /* Build configuration list for PBXProject "AFN上传文件" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C908462259BDEF70093C751;
+			productRefGroup = 3C90846C259BDEF70093C751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C90846A259BDEF70093C751 /* AFN上传文件 */,
+				3C908480259BDEF80093C751 /* AFN上传文件Tests */,
+				3C90848B259BDEF80093C751 /* AFN上传文件UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C908469259BDEF70093C751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C90847B259BDEF80093C751 /* LaunchScreen.storyboard in Resources */,
+				3C908478259BDEF80093C751 /* Assets.xcassets in Resources */,
+				3C908476259BDEF70093C751 /* Main.storyboard in Resources */,
+				3C9084B5259BE8FB0093C751 /* 掘金：致iOSer的一封信.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C90847F259BDEF80093C751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C90848A259BDEF80093C751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DFB1F185A1386789D08AFBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件-AFN上传文件UITests/Pods-AFN上传文件-AFN上传文件UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件-AFN上传文件UITests/Pods-AFN上传文件-AFN上传文件UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件-AFN上传文件UITests/Pods-AFN上传文件-AFN上传文件UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA921AFC34CCF302F274B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件/Pods-AFN上传文件-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件/Pods-AFN上传文件-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFN上传文件/Pods-AFN上传文件-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8B3A152A30E1A9BABAA7C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFN上传文件-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F82A2D8EFE58534EC12F0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFN上传文件-AFN上传文件UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE94ACC24AA1D0D336186052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFN上传文件Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C908467259BDEF70093C751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C908473259BDEF70093C751 /* ViewController.swift in Sources */,
+				3C90846F259BDEF70093C751 /* AppDelegate.swift in Sources */,
+				3C908471259BDEF70093C751 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C90847D259BDEF80093C751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C908486259BDEF80093C751 /* AFN____Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C908488259BDEF80093C751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C908491259BDEF80093C751 /* AFN____UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C908483259BDEF80093C751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C90846A259BDEF70093C751 /* AFN上传文件 */;
+			targetProxy = 3C908482259BDEF80093C751 /* PBXContainerItemProxy */;
+		};
+		3C90848E259BDEF80093C751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C90846A259BDEF70093C751 /* AFN上传文件 */;
+			targetProxy = 3C90848D259BDEF80093C751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C908474259BDEF70093C751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C908475259BDEF70093C751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C908479259BDEF80093C751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C90847A259BDEF80093C751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C908493259BDEF80093C751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C908494259BDEF80093C751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C908496259BDEF80093C751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543FC5C9B9FB2DAD2BF68C27 /* Pods-AFN上传文件.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C908497259BDEF80093C751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DF8994354D74BCF25E7FA9 /* Pods-AFN上传文件.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C908499259BDEF80093C751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFD5733B25F7E7B0474921F /* Pods-AFN上传文件Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFN上传文件.app/AFN上传文件";
+			};
+			name = Debug;
+		};
+		3C90849A259BDEF80093C751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE80C37351DFA394FED82C5 /* Pods-AFN上传文件Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFN上传文件.app/AFN上传文件";
+			};
+			name = Release;
+		};
+		3C90849C259BDEF80093C751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52BA99B04E1441A9E1D9892E /* Pods-AFN上传文件-AFN上传文件UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFN上传文件";
+			};
+			name = Debug;
+		};
+		3C90849D259BDEF80093C751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C23372030B5554274117B4E /* Pods-AFN上传文件-AFN上传文件UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				INFOPLIST_FILE = "AFN上传文件UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.abc.yf.AFN----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFN上传文件";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C908466259BDEF70093C751 /* Build configuration list for PBXProject "AFN上传文件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C908493259BDEF80093C751 /* Debug */,
+				3C908494259BDEF80093C751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C908495259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C908496259BDEF80093C751 /* Debug */,
+				3C908497259BDEF80093C751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C908498259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C908499259BDEF80093C751 /* Debug */,
+				3C90849A259BDEF80093C751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C90849B259BDEF80093C751 /* Build configuration list for PBXNativeTarget "AFN上传文件UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C90849C259BDEF80093C751 /* Debug */,
+				3C90849D259BDEF80093C751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C908463259BDEF70093C751 /* Project object */;
+}
