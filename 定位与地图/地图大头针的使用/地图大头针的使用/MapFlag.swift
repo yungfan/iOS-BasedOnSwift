@@ -20,7 +20,7 @@ class MapFlag: NSObject, MKAnnotation {
 
     let urlString: String
 
-    init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D, url: String) {
+    init(title: String?, subtitle: String?, coordinate: CLLocationCoordinate2D, url: String) {
         self.title = title
 
         self.subtitle = subtitle
@@ -28,7 +28,5 @@ class MapFlag: NSObject, MKAnnotation {
         self.coordinate = coordinate
 
         urlString = url
-
-        super.init()
     }
 }
