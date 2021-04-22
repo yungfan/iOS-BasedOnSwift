@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     func upload() {
         // 1、确定URL
-        let url = URL(string: "http://192.168.0.97:3000/upload")
+        let url = URL(string: "http://服务器ip地址:3000/upload")
 
         // 2、确定请求
         var request = URLRequest(url: url!)
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
 
 extension ViewController: URLSessionTaskDelegate {
     func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
-        uploadProgress.setProgress(Float(totalBytesSent / totalBytesExpectedToSend), animated: true)
+        uploadProgress.setProgress(Float(totalBytesSent) / Float(totalBytesExpectedToSend), animated: true)
 
         print("Delegate \(Thread.current)")
     }

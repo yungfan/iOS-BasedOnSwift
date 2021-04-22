@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     func download() {
-        let url = URL(string: "http://localhost:8080/AppTestAPI/wall.png")
+        let url = URL(string: "http://服务器ip地址:8080/AppTestAPI/wall.png")
 
         let urlRequest = URLRequest(url: url!)
 
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 extension ViewController: URLSessionDownloadDelegate {
     // 计算进度
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        downloadProgress.setProgress(Float(totalBytesWritten / totalBytesExpectedToWrite), animated: true)
+        downloadProgress.setProgress(Float(totalBytesWritten) / Float(totalBytesExpectedToWrite), animated: true)
     }
 
     // 下载完成
