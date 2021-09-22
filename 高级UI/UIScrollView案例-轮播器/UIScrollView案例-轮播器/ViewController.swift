@@ -67,12 +67,49 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pageControl.numberOfPages = 5
 
         pageControl.center = CGPoint(x: bannerW * 0.5, y: 240.0)
+        
+        pageControl.hidesForSinglePage = true
+
+        // UIPageControl点击时只翻一页解决办法
+        var index = 0
+        
+        // UIPageControl默认的层次结构，找到最里面的subview
+        for view in pageControl.subviews[0].subviews[0].subviews {
+            // 打开交互
+            view.isUserInteractionEnabled = true
+            
+            // 创建按钮
+            let dotBtn = UIButton(type: .custom)
+            
+            dotBtn.frame = view.bounds
+            
+            // tag与index绑定
+            dotBtn.tag = index
+            
+            dotBtn.backgroundColor = .clear
+            
+            // 点击事件
+            dotBtn.addTarget(self, action: #selector(dotBtnClick), for: .touchUpInside)
+            
+            view.addSubview(dotBtn)
+            
+            index += 1
+        }
 
         // 监听事件
         pageControl.addTarget(self, action: #selector(pageIndicate), for: .valueChanged)
 
         view.addSubview(pageControl)
     }
+    
+    @objc func dotBtnClick(button: UIButton) {
+        let index = button.tag
+        
+        pageControl.currentPage = index
+
+        banner.setContentOffset(CGPoint(x: Int(bannerW) * index, y: 0), animated: true)
+    }
+    
 
     @objc func pageIndicate(pageControl: UIPageControl) {
         let currentIndex = pageControl.currentPage
