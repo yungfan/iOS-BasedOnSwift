@@ -18,7 +18,8 @@ class ViewController: UIViewController {
 
     func getWheather() {
         // 聚合数据API，服务器返回的数据示例已经放在工程里面了——weather.json
-        let urlString = "http://v.juhe.cn/weather/index?format=2&cityname=芜湖&key=2d2e6e836dbdffac56814bc4d449d507"
+        // 需要将将自己申请的key替换掉，否则可能会返回无效数据
+        let urlString = "http://apis.juhe.cn/simpleWeather/query?city=芜湖&key=25ca0b78d78b2dc7761bc2e4af6d82fc"
 
         // 由于API中有中文，必须转码
         let encodeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -56,6 +57,8 @@ class ViewController: UIViewController {
 
                     // 获取具体的天气信息
                     print(weather["temperature"]!)
+                    print(weather["weather"]!)
+                    
                 }
             }
         }

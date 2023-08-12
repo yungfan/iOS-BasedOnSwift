@@ -13,15 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // 1. 获取需要传值的SecViewController
         let secVC: SecViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
 
-        secVC.discloure = {
-            (info: String?) -> Void in
+        // 2. 实现SecViewController的闭包
+        secVC.discloure = { (info: String?) -> Void in
 
+            // 3. 获取传值
             self.infoLb.text = info
         }
 

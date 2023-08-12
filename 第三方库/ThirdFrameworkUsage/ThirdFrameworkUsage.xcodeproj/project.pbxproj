@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08FA05E05B9C467E110AC348 /* Pods_ThirdFrameworkUsage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B417EEE994EB1C2672ABEEB /* Pods_ThirdFrameworkUsage.framework */; };
 		105270CE2259D9DD3F5B84A9 /* Pods_ThirdFrameworkUsageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E869065C47569C08535C79EF /* Pods_ThirdFrameworkUsageTests.framework */; };
 		21C7AEF591C48D04AA04CDAC /* Pods_ThirdFrameworkUsageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C43713CB363F0500BDDCBA /* Pods_ThirdFrameworkUsageUITests.framework */; };
 		3C142D6723B98D16002C3724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C142D6623B98D16002C3724 /* AppDelegate.swift */; };
@@ -26,6 +25,8 @@
 		3C142DA323B9BCA7002C3724 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C142DA223B9BCA7002C3724 /* ChartsViewController.swift */; };
 		3C142DA523B9C727002C3724 /* BMPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C142DA423B9C727002C3724 /* BMPlayerViewController.swift */; };
 		3C142DA723B9C907002C3724 /* yungfan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C142DA623B9C7D5002C3724 /* yungfan.mp4 */; };
+		3C95E5592A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C95E5582A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework */; };
+		3C95E55A2A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C95E5582A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,20 @@
 			remoteInfo = ThirdFrameworkUsage;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C95E55B2A87803D00CCF675 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C95E55A2A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C142D6323B98D16002C3724 /* ThirdFrameworkUsage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdFrameworkUsage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +83,7 @@
 		3C142DA223B9BCA7002C3724 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		3C142DA423B9C727002C3724 /* BMPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMPlayerViewController.swift; sourceTree = "<group>"; };
 		3C142DA623B9C7D5002C3724 /* yungfan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yungfan.mp4; sourceTree = "<group>"; };
+		3C95E5582A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ThirdFrameworkUsage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F97CBA3B800F5AFA821254E /* Pods-ThirdFrameworkUsageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdFrameworkUsageTests.debug.xcconfig"; path = "Target Support Files/Pods-ThirdFrameworkUsageTests/Pods-ThirdFrameworkUsageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53C43713CB363F0500BDDCBA /* Pods_ThirdFrameworkUsageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThirdFrameworkUsageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F5D5471D6DD8575C165EF0 /* Pods-ThirdFrameworkUsage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdFrameworkUsage.release.xcconfig"; path = "Target Support Files/Pods-ThirdFrameworkUsage/Pods-ThirdFrameworkUsage.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08FA05E05B9C467E110AC348 /* Pods_ThirdFrameworkUsage.framework in Frameworks */,
+				3C95E5592A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +201,7 @@
 		A4824F604EB827C74EBD3244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C95E5582A87803D00CCF675 /* Pods_ThirdFrameworkUsage.framework */,
 				9B417EEE994EB1C2672ABEEB /* Pods_ThirdFrameworkUsage.framework */,
 				E869065C47569C08535C79EF /* Pods_ThirdFrameworkUsageTests.framework */,
 				53C43713CB363F0500BDDCBA /* Pods_ThirdFrameworkUsageUITests.framework */,
@@ -204,6 +221,7 @@
 				3C142D6023B98D16002C3724 /* Frameworks */,
 				3C142D6123B98D16002C3724 /* Resources */,
 				2657B7BFEA02439436D2B833 /* [CP] Embed Pods Frameworks */,
+				3C95E55B2A87803D00CCF675 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

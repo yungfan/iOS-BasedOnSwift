@@ -13,23 +13,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // 1. 获取被代理对象
         let secVC: SecViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abc") as! SecViewController
 
         // 2.将当前的控制器成为SecViewController中的delegate
-
         secVC.delegate = self
 
         present(secVC, animated: true, completion: nil)
     }
 }
 
-// 1.遵守协议
-
+// MARK: - 遵守协议
 extension ViewController: passValueProtocol {
+    // 3. 遵守协议，实现方法，获取传值
     func passValue(info: String?) {
         infoLb.text = info
     }

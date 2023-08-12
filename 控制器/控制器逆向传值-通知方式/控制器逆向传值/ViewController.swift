@@ -13,12 +13,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
-        // 先监听通知 后发送
+        // 监听通知
+        // object：与发送时的object对应，只有当通知来指定的发送者时才触发
+        // handlerNoti中的代码执行时所在的线程由发出通知的线程决定
         NotificationCenter.default.addObserver(self, selector: #selector(handlerNoti), name: NSNotification.Name("abc"), object: nil)
     }
 
+    // 收到通知处理
     @objc func handlerNoti(noti: Notification) {
         let userInfo = noti.userInfo
 
