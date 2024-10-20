@@ -9,13 +9,9 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>appB</string>
+				<string>appA</string>
 			</array>
 		</dict>
-	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>appA</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -36,5 +32,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>appB</string>
+	</array>
 </dict>
 </plist>

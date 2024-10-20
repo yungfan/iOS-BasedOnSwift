@@ -46,10 +46,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        print(UIApplication.shared.canOpenURL(URL(string: "appA://callback")!))
-        if let url = URL(string: "appA://") {
+        if let url = URLContexts.first?.url,
+           let param = url.query?.split(separator: "=").last,
+           let returnURL = URL(string: String(param)) {
             DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                UIApplication.shared.open(returnURL, options: [:], completionHandler: nil)
             }
         }
     }

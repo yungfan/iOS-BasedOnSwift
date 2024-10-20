@@ -1,14 +1,16 @@
 //
 //  SceneDelegate.swift
-//  B
+//  A
 //
-//  Created by 杨帆 on 2024/10/7.
+//  Created by 杨帆 on 2024/9/30.
 //
 
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
     var window: UIWindow?
+
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -44,13 +46,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        print(UIApplication.shared.canOpenURL(URL(string: "appA://callback")!))
-        if let url = URL(string: "appA://") {
-            DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
+        if let url = URLContexts.first?.url, url.host() == "callback" {
+            print("B App 返回")
         }
     }
 }
+
