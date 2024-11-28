@@ -24,6 +24,13 @@ class ViewController: UIViewController {
         try! session.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
         // 激活Session
         try! session.setActive(true)
+        // 授权对话框
+        session.requestRecordPermission { granted in
+            if granted {
+                print("同意授权")
+            }
+        }
+
         // 获取Document目录
         let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory,
                                                          .userDomainMask, true).first!
